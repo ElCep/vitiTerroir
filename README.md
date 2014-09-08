@@ -3,7 +3,7 @@ vitiTerroir
 
 Une présentation reveal.js
 
-Une présentation en html et javaScript avec [reveal.js](https://github.com/hakimel/reveal.js/), pour la journée d'introduction au projet vitiTerroir à tour.
+Une présentation en html et javaScript avec [reveal.js](https://github.com/hakimel/reveal.js/), pour la journée d'introduction au projet vitiTerroir à Tours.
 
 ## Objectifs ##
 
