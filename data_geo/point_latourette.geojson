@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "id": 1, "descriptio": "La tourette" }, "geometry": { "type": "Point", "coordinates": [ 3.067396782858402, 42.530245956330333 ] } }
+]
+}
