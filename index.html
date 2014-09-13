@@ -67,7 +67,14 @@
 							découpage et de gestion de l'espace , l'aménagement de cet espace.
 							[...] concept relevant de la sociabilisation de l'espace.&rdquo;
 						</blockquote>
-						<p align="right">Source : Brunet et al. 1992<p>
+						<p align="right">Brunet et al. 1992<p>
+						<h3>Quand on parle de terroir</h3>
+						<blockquote cite="http://www.cairn.info/resume.php?ID_ARTICLE=EG_404_0337">
+							&ldquo; terroir est une portion de territoire, un
+							taxon, homogène à tous les points de vue, naturels et
+							socio-économiques&rdquo;
+						</blockquote>
+						<p align="right">Rouvellac et al., 2012<p>
 					</section>
 					<section>
 						<h3>Quand on parle de paysage</h3>
@@ -76,7 +83,19 @@
 							 arangement d'objets visible et perçu par un sujet à traver ses propres
 							filtres [...]&rdquo;
 						</blockquote>
-						<p align="right">Source : Brunet et al. 1992<p>
+						<p align="right">Brunet et al. 1992<p>
+
+						<h3>Paysage et terroir?</h3>
+						<blockquote cite="http://www.projetsdepaysage.fr/fr/du_paysage_au_terroir_viticole_de_forte_pente_a_la_recherche_des_leviers_du_management_territorial">
+							&ldquo;On peut alors considérer le paysage non pas comme une composante
+							du terroir, mais comme l'une de ses résultantes. Les paysages
+							viticoles deviennent alors la partie visible à l'échelle du
+							territoire de la complexité des mécanismes mis en jeu dans
+							la notion de terroir&rdquo;
+						</blockquote>
+						<p align="right">Delay 2013<p>
+
+
 					</section>
 				  <section>
 				  <h2>Thématique de recherche</h2>
@@ -138,10 +157,14 @@
 				</section>
 <!-- Debut des parties sur les modèles -->
 				<section>
-					<section>
-						<h2>4 modèles et 3 échelles</h2>
+					<section data-background="img/apero.jpg" data-background-transition="slide">
+						<h2>Mise en bouche</h2>
+						<h3>4 modèles et 3 échelles</h3>
+						</br>
+						<small>crédit photo : <a href="https://www.flickr.com/photos/richardmunckton/5281025166">
+							Richard Munckton</a> sur Flickr</small>
 					</section>
-					<!-- CELL -->
+<!-- CELL -->
 					<section>
 						<h2>CELL : </h2>
 						<h3>un modèle "data driven"</h3>
@@ -179,15 +202,43 @@
 						<p>mais dans la pratique, la 3<sup><small>ème</small></sup> génération n'est pas toujours facile à observer!</p>
 					</section>
 					<section>
+						<h2>Formalisation</h2>
+						<ol>
+							<li>Un modèle "data driven"</li>
+							<ul>
+								<li>Des données SIG, de température, phénologie (date de débourement
+									, etc.)</li>
+								<li>Un modèle de populations statistique issu de la litérature
+									(Developpé par <a href="http://cri.fmach.eu/Research/Sustainable-Agro-Ecosystems-and-Bioresources/Interactions-in-the-agro-ecosystems/people/Amelia-Caffarra">
+										A. Caffarra</a>) et porté en agent.</li>
+							</ul>
+						</ol>
+					</section>
+					<section>
 						<h3>Implémentation à base d'agents</h3>
 						<h4>Comportement de base</h4>
 						<video preload="auto" controls="controls" src="video/lobesia_free.webm" height="450"></video>
 					</section>
-					<section>
+					<!--<section>
 						<h4>Exploration des méthodes de lute</h4>
 						<video preload="auto" controls="controls" src="video/lobesia_confusion.webm" height="450"></video>
+					</section>-->
+					<section>
+						<h3>Les possibilitées</h3>
+							<ul>
+								<li>optimisations des campagnes de lute intégrée</li>
+								<li>exploration des effets de passager clandestin</li>
+								<li>consequance et addaptation au changement climatique</li>
+							</ul>
+						</br>
+						</br>
+						<h3>Les échelles</h3>
+							<ul>
+								<li><em>spatiale</em> : îlot de culture (groupe de parcelles)</li>
+								<li><em>temporelle</em> : la journée</li>
+							</ul>
 					</section>
-					<!-- ACIDITY GIS -->
+<!-- ACIDITY GIS -->
 					<section>
 						<h2>Acidity GIS</h2>
 						<h3>un modèle entre "concept driven"  </br> et "data driven"</h3>
@@ -210,22 +261,12 @@
 						<img src="img/2cartes2012GIESCO-2.png" height="450" alt="carte de température et acidité Banyuls"></img>
 					</section>
 					<section>
-						<h2>Objectifs</h2>
-						<img src="img/agouille_banyuls.JPG" alt="parcelles sur banyuls" width="30%" style="float: right"/>
-						<p align="left">Dans un contexte de changement climatique est ce que : </p>
-						<ul style="width: 60%;">
-							<li>Le handicape structurale de la pente peut être tourner en avantage?</li>
-							<li>La coopérative peut-elle conserver ses pratiques &#339;unologique.</li>
-							<li>La coopérative peut-elle être considérer comme un acteurs du management territoriale (à quel coûts)</li>
-							<li>Le territoire peut il conserver ses atouts paysagés (existance de gros ilots viticole, maintient des murette de pierres sèches, etc.)</li>
-						</ul>
-					</section>
-					<section>
 						<h2>Formalisation</h2>
 						<ol>
 							<li>Un modèle "data driven"</li>
 							<ul>
-								<li>Des données géographique (SIG) de température, d'acidité totale</li>
+								<li>Des données SIG, de température, de maturité (d'acidité totale,
+								alcool potentiel, etc.)</li>
 							</ul>
 							<li>Un modèle "concept driven"</li>
 							<ul>
@@ -237,123 +278,190 @@
 						<h2>Un modèle à base d'agents</h2>
 						<video preload="auto" controls="controls" src="video/acidityGIS_mu0.5.webm" height="450"></video>
 					</section>
-					<!-- DION ET VICTOR -->
+					<section>
+						<h3>Les possibilitées</h3>
+							<ul>
+								<li>explorer les possibilitées offerte par le handicape structurale
+									 de la pente dans le contexte du changement climatique (CC)?</li>
+								<li>évaluer l'impacte des décision individuelles sur des indicateurs
+								&oelig;unologique</li>
+								<li>évaluer l'impacte des stratégies de coopératives sur le
+									paysages (est elle un acteur du management territoriale (à quel coûts))</li>
+								<li>délimitations des capacitées d'addaptation au changement climatique.
+								Le territoire peut il conserver ses atouts paysagés (existance de
+								 gros ilots viticole, maintient des murette de pierres sèches, etc.)</li>
+							</ul>
+						</br>
+						</br>
+						<h3>Les échelles</h3>
+							<ul>
+								<li><em>spatiale</em> : une communes, une petite AOC</li>
+								<li><em>temporelle</em> : l'année (une campagne de culture)</li>
+							</ul>
+					</section>
+<!-- DION ET VICTOR -->
 					<section>
 						<h2>Dion et VicTor</h2>
 						<h3>deux modèles "concept Driven"</h3>
 					</section>
 					<section>
 						<h3>Objet d'étude : les paysages viticoles</h3>
-						<!--p>Paysages emblématiques de la capacité d'adaptation des sociétés qui les ont construits</br>
-						</p-->
-						<p>Comment explorer des comportements passés pour comprendre les formes paysagères actuelles?
-						</p>
+						<p>Comment explorer des comportements passés pour en comprendre les
+							configurations actuelles?</p>
 						<img src="img/pano-banyuls.jpg">
 						<small>Le vignoble de <a href="http://www.openstreetmap.org/?mlat=42.4794&mlon=3.1282#map=13/42.4795/3.1281">Banyuls-sur-Mer</a></small></br>
-						<p>Explorer les comportements catastrophique (au sens de R.Thom 1989) pour approcher les limites de validiter du modèle.</p>
+						<p>En s'intéressant aux zones catastrophique (au sens de R.Thom 1989)
+							pour approcher les limites de validiter du modèle.</p>
 					</section>
-			<!-- DION -->
 					<section>
-						<h2>1) En revisitant R. Dion</h2>
-						<p>Un travail initié en réponse à un article de A. Banos, D. Moreno, C. Pivano et P. Taillandier sur <a href="http://cybergeo.revues.org/24877">cybergeo</a> proposant de revisiter
-						les travaux classiques des théories géographiques. Pour nous R.Dion, 1952, "<a href="http://www.persee.fr/web/revues/home/prescript/article/geo_0003-4010_1952_num_61_328_13718">Querelle Des Anciens et Des Modernes Sur Les Facteurs de La Qualité Du Vin</a>", Annales de Géographie 61, no. 328 (1952): p417–431 </p>
-						<p align="left">des propositions tel que:</p>
-						<ul>
-							<li>si les fondateurs de nos vignobles avaient été aussi dociles qu'on le dit aux suggestions de la nature, ils se fussent bien garder d'aventurer leurs plantations hors de la région méditerranéenne […](p429)</li>
-							<li>avant les chemins de fer, les plus belles possibilités de débit, celles qu'assuraient les grands marchés de l'Europe septentrionale, où le vin se vendait au plus haut prix,
-							étaient limitées aux abords des ports maritimes, des rivières navigables et de quelques grandes routes de terre, aptes aux charriots lourds (p419)</li>
-							<li>...</li>
-						</ul>
-					</section>
-					<section data-background-transition="slide" data-background="img/bouteilles1.JPG">
-						<h3>pour s'intéroger sur 3 points : </h3>
-						<ol>
-							<li>Comment répond dans la durée un territoire de production face à un choc extérieur de demande ?</li>
-							<li>Peut-on faire l'hypothèse que la qualité est une fonction du temps ?</li>
-							<li>Comment s'ordonnancent les facteurs influençant la qualité sur le territoire ?</li>
-						</ol>
-						<small>crédit photo : Etienne DELAY</small>
-					</section>
-					<section data-background-transition="slide">
-						<h3>Posture</h3>
+						<h3>Prédire &ne; Expliquer</h3>
 						<blockquote cite="http://www.amazon.fr/Pr%C3%A9dire-nest-expliquer-Rene-Thom/dp/2081224984/ref=sr_1_1?ie=UTF8&qid=1384529013&sr=8-1&keywords=predire+n%27est+pas+expliquer">
-						&ldquo;Growing Artificial Societies from Bottom Up&rdquo;</br>
+						&ldquo;L'expérimentation par elle même ne peut guère conduire à des
+						progrès [...]. Elle peut permettre de contrôler que si on à une
+						théorie, donc si l'on dispose d'outils d'exploration. La théorisation
+						[...] est liée à la possibilité de plonger le réel dans un virtuel
+						imaginaire, doté de propriétés génératives[...]&rdquo;</br>
 						</blockquote>
-						<p align="right">J.M Epstein et R. Axtell 1996</p>
-						<p align="left">Dans cette lignée nous avons :</p>
+						<p align="right">R. Thom 2009</p>
+						<a href="http://www.amazon.fr/Pr%C3%A9dire-nest-expliquer-Rene-Thom/dp/2081224984/ref=sr_1_1?ie=UTF8&qid=1384529013&sr=8-1&keywords=predire+n%27est+pas+expliquer">
+						  <img width="160" height="238" src="img/thom.jpg" alt="couverture livre Rene Thom">
+						</a>
+					</section>
+					<section>
+						<h2>Formalisation</h2>
+						<p>Deux modèle "concept driven"</p>
 						<ul>
-							<li>travaillé sur un monde et des sociétés virtuels</li>
-							<li>autour d'un individualisme méthodologique</li>
-							<li>réduit le système à des interactions essentielles strictement décrites dans l'article de <a href="http://www.persee.fr/web/revues/home/prescript/article/geo_0003-4010_1952_num_61_328_13718">Roger DION (1952)</a></li>
+							<li><em>Dion Still Alive</em> : initié en réponse à un article de <strong>A. Banos
+									et al.</strong> sur <a href="http://cybergeo.revues.org/24877">cybergeo</a>
+									proposant de revisiter les travaux classiques des théories géographiques.
+								 	Pour nous R.Dion, 1952, "<a href="http://www.persee.fr/web/revues/home/prescript/article/geo_0003-4010_1952_num_61_328_13718">
+									Querelle Des Anciens et Des Modernes Sur Les Facteurs de La Qualité
+									Du Vin</a>", Annales de Géographie 61, no. 328 (1952): p417–431 </li>
+							<li><em>VicTor </em>: initié avec <strong>S. Leturcq</strong> et
+								<strong>X. Rodier</strong> (LAT) pour explorer les basculements sur
+								 le temps long d'une viticulture de subsistance à une viticulture
+								 d'exportation. Quelles sont les conséquences de la compétition
+								 spatiale entre différents types d'agriculture et leurs
+							   réponses à différents marchés.</li>
 						</ul>
 					</section>
 					<section>
-					<h2>Un territoire en autarcie</h2>
-					<video preload="auto" controls="controls" src="video/no-marche.webm"></video>
-					</section>
-					<section>
-					<h2>Des réactions au marché ?</h2>
-					<video preload="auto" controls="controls" src="video/marche.webm"></video>
-					</section>
-					<section>
-					<h2>Et si on parlait de qualité ?</h2>
-					<video preload="auto" controls="controls" src="video/isotrope.webm"></video>
-					</section>
-			<!-- VICTOR -->
-					<section>
-					<h2>2) en intérogant VicTor</h2>
-					<p>Les paysages sont emblématiques de la capacité d'adaptation des sociétés qui les ont construits</p>
-					<img height="300" src="img/cembra2.jpg">
-					<p>Etudier le basculement sur le temps long d'une viticulture de subsistance à une viticulture
-					d'exportation.</br>
-					Quelles sont les conséquences de la compétition spatiale entre différents types
-					d'agriculture et leurs réponses à différents marchés.</p>
-					</section>
-					<section>
-						<h3>En deux mots ... comment ça fonctionne ?</h3>
-						<img height="350" src="img/dessin-schema.png" alt="schema sous modèle">
-						<ul>
-							<li>n°1 : Extension/rétractation des parcelles pour chaque localité</li>
-							<li>n°2 : Mise à jour du capital des localités</li>
-							<li>n°3 : Évolution de la <a href="#/6/1">population</a> des localités</li>
-							<li>n°4 : Mise à jour du prix d'achat et de vente des productions (<a href="#/6/3">logistique</a> ou <a href="#/6/2">linéaire</a>) de manière généralisée à tout le système</li>
+						<h2>Dion & Victor</h2>
+						<img src="img/ordo_dion.png" alt="schema sous modèle Dion" width="45%" />
+						<img src="img/ordo_victor.png" alt="schema sous modèle Victor" width="45%" height="327" />
+						<p align ="left">Ce qui va nous intéresser : </p>
+						<ul style="width: 45%;">
+							<li>L'évolution de la qualité dans le temps</li>
+							<li>l'ordonnancement des facteurs qui jouent sur cette qualité</li>
 						</ul>
+						<ul style="width: 45%;">
+							<li>L'influence de la compétitions pour l'espace de deux productions
+								 agricoles</li>
+							<li>L'influence sur cette compétition de l'évolution des marchés</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Dion Still Alive</h2>
+						<h3>La qualité est elle une fonction du temps ?</h3>
+						<video preload="auto" controls="controls" src="video/isotrope.webm"></video>
+					</section>
+					<section>
+						<h3>Les possibilitées</h3>
+							<ul>
+								<li>plonger le réel dans un virtuel imaginaire, doté de propriétés
+									 génératives &rarr; Théorisation</li>
+							</ul>
+						</br>
+						</br>
+						<h3>Les échelles</h3>
+							<ul>
+								<li><em>spatiale</em> : Regions</li>
+								<li><em>temporelle</em> : l'année (une campagne de culture)</li>
+							</ul>
 					</section>
 				</section>
-
 <!--DIAPO SUR LES LOGCIELS LIBRES-->
 				<section>
-				  <h3>En deux mots ...
-				  </br>qu'est-ce qu'on a mis derrière ?</h3>
-				  <p>la minute logiciel libre</p>
+				  <h3>La minute logiciel libre</h3>
 				  <ol>
-				    <li>un modèle multi-agents sur <a href="http://ccl.northwestern.edu/netlogo/">Netlogo</a></li>
-				    <li>une analyse de sensibilité avec <a href="http://www.openmole.org/">OPENMOLE</a> sur <a href="http://www.unilim.fr/sci/wiki/cali/accueil">CALI</a></li>
-				    <li>une exploration des résultats en cour avec <a href="http://www.r-project.org/">R</a></li>
+				    <li>des modèles multi-agents sur <a href="http://ccl.northwestern.edu/netlogo/">Netlogo</a></li>
+				    <li>des analyses de sensibilité avec <a href="http://www.openmole.org/">OPENMOLE</a> sur <a href="http://www.unilim.fr/sci/wiki/cali/accueil">CALI</a></li>
+				    <li>des explorations de résultats avec <a href="http://www.r-project.org/">R</a></li>
 				  </ol>
 				  <img width="300" height="300" src="img/Official_gnu.svg.png" alt="logo gnu fondation"></br>
 				  <small>crédit image : <a href="http://www.gnu.org/graphics/gnusvgart.html">GNU fondation</a></small>
 				</section>
 <!--CONCLUSION-->
+			<section>
 				<section>
-				  <h3>Les SMA, le temps long et les SHS</h3>
-				  <p align="left" >Les SMA permettent :</p>
-				  <ol>
-				    <li>d'accompagner la réflexion du chercheur</li>
-				    <li>d'explorer des comportements et des configurations difficilement envisageables</li>
-				    <li>de préparer à la réception et à l'identification de comportements réels</li>
-				  </ol>
+					<h2>Conclusion</h2>
 				</section>
+				<section>
+					<h2>Nous disions ? </br>
+					<strong>Vititerroir</strong> pour un géographe?</h2>
+				</section>
+				<section data-background="img/directions.jpg" data-background-transition="slide">
+					<h2>Plusieurs directions?</h2>
+					<h3>Pour la modélisation</h3>
+					<p>
+						On peut souligner (si besoin) le caractère complexe des systèmes
+						viti-vinicoles. Il importe donc de prendre garde à :
+					</p>
+					<ul>
+						<li>Diversité d'échelles spatiale</li>
+						<li>Diversité d'agents modélisé</li>
+						<li>etc.</li>
+					</ul>
+					<p>
+						qui modifie la manière dont on apréhende la combinaison
+						de trois sous-systèmes : le sociosystème, l’écosystème et le géosystème
+					</p>
+					<h3>Les SMA, l'espace et le temps</h3>
+					<p align="left" >Les SMA permettent :</p>
+					<ol>
+						<li>d'accompagner la réflexion du chercheur</li>
+						<li>d'explorer des comportements et des configurations difficilement
+							envisageables</li>
+						<li>de préparer à la réception et à l'identification de comportements
+							réels</li>
+					</ol>
+				</section>
+				<section>
+					<h2>Deux mouvement parallèles</h2>
+					<ul>
+						<li>Un mouvement historique : ou la formalisation des interactions
+						sera plus conceptuelles et le grain plus grossier (KISS) &rarr; Expliquer</li>
+					</ul>
+					<ul>
+						<li>Un mouvement à échelles imbriquer, plus descriptif ou les interactions
+						auront une granilarité plus fine (KIDS) &rarr; Prédire/Accompagner</li>
+					</ul>
+				</section>
+			</section>
+
 <!--A REPRENDRE LES PTS FORT DE VITITERROIR-->
-				<section>
-				<p>L’originalité première de ce projet réside dans la prise en compte du caractère complexe du système viti-vinicole, conçu comme la combinaison de trois sous-systèmes : le sociosystème, l’écosystème et le géosystème [Chouquer 2000]</p>.
+				<!-- <section>
+				<p>L’originalité première de ce projet réside dans la prise en compte du
+					caractère complexe du système viti-vinicole, conçu comme la combinaison
+					 de trois sous-systèmes : le sociosystème, l’écosystème et le géosystème
+					 [Chouquer 2000]</p>.
 
-				<p>Les filières professionnelles seront particulièrement intéressées par les développements de VitiTerroir, qui doit ouvrir sur une meilleure connaissance et compréhension de la fabrique des territoires des vins.</p>
+				<p>Les filières professionnelles seront particulièrement intéressées par
+					 les développements de VitiTerroir, qui doit ouvrir sur une meilleure
+					 connaissance et compréhension de la fabrique des territoires des vins.</p>
 
-				<p>le projet VitiTerroir débouchera sur un outil prototype de simulation, initiateur d'un véritable outil d'aide à la décision pour les politiques publiques.</p>
+				<p>le projet VitiTerroir débouchera sur un outil prototype de simulation,
+					 initiateur d'un véritable outil d'aide à la décision pour les politiques
+					 publiques.</p>
 
-				<p>VitiTerroir propose d'élaborer un outil prospectif grâce à une plongée dans le passé lointain, proche, et sub-actuel. VitiTerroir sera d'abord l'occasion d’approfondir la connaissance historique de plusieurs vignobles de la région Centre par un important travail de dépouillement de sources et des analyses minutieuses. A l'issue du projet, l'outil de simulation permettra de proposer des scenarios d'évolution historique de la viticulture dans des zones pour lesquelles on ne dispose d'aucune donnée.</p>
-				</section>
+				<p>VitiTerroir propose d'élaborer un outil prospectif grâce à une plongée
+					 dans le passé lointain, proche, et sub-actuel. VitiTerroir sera d'abord
+					 l'occasion d’approfondir la connaissance historique de plusieurs vignobles
+					 de la région Centre par un important travail de dépouillement de sources
+					 et des analyses minutieuses. A l'issue du projet, l'outil de simulation
+					 permettra de proposer des scenarios d'évolution historique de la viticulture
+					 dans des zones pour lesquelles on ne dispose d'aucune donnée.</p>
+				</section> -->
 <!--DIAPO DE FIN-->
 				<section data-background="img/fin.jpg" data-background-transition="slide">
 					<h2>Merci de votre </br> Attention</h2>
