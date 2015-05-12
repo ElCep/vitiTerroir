@@ -4,31 +4,29 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>VitiTerroir pour un Géographe</title>
+		<title>VitiTerroir reavel.js</title>
 
-		<meta name="description" content="Le projet vitiTerroir, SMA et système viti-vinicole en région centre">
+		<meta name="description" content="VitiTerroir pour ThéoQuant">
 		<meta name="author" content="Etienne DELAY">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/night.css" id="theme">
 
-		<!-- For syntax highlighting -->
+		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<!-- Printing and PDF exports -->
 		<script>
-			if( window.location.search.match( /print-pdf/gi ) ) {
-				var link = document.createElement( 'link' );
-				link.rel = 'stylesheet';
-				link.type = 'text/css';
-				link.href = 'css/print/pdf.css';
-				document.getElementsByTagName( 'head' )[0].appendChild( link );
-			}
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 
 		<!--[if lt IE 9]>
@@ -43,266 +41,23 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>VitiTerroir pour un géographe</h1>
-					<h3>l'approche modélisatrice des systèmes spatiaux viticoles</h3>
+					<h2>Simulation des dynamiques spatiales d'un territoire agro-viticole</h2>
+					<h3>premier pas vers le modèle VitiTerroir</h3>
 					<p>
-						<small><a href="http://recherche.flsh.unilim.fr/geolab/etienne-delay/">Etienne DELAY</a> doctorant GEOLAB/ <a href="http://twitter.com/ElCep">@ElCep</a></small></br>
-						<small>Sous la direction de <a href="http://recherche.flsh.unilim.fr/geolab/eric-rouvellac/">Eric Rouvellac</a> et  <a href="http://recherche.flsh.unilim.fr/geolab/phillipe-allee/">Philippe Allée</a></small>
+						<small>Présentation : <a href="http://recherche.flsh.unilim.fr/geolab/etienne-delay/">Etienne DELAY</a></small></br>
+						<small>Avec : Adrien <a href="http://www.univ-tours.fr/m-lammoglia-adrien-421040.kjsp">LAMMOGLIA</a>, 
+						Samuel <a href="http://www.univ-tours.fr/m-leturcq-samuel-185649.kjsp">LETURCQ</a> et
+						 &#201;ric <a href="http://geolab.univ-bpclermont.fr/spip.php?article56">ROUVELLAC</a></small>
 					</p>
-					<p><small><strong>Séminaire inaugural VitiTerroir - 16 septembre 2014</strong></small></br>
-					<small>lieu : <a href="http://citeres.univ-tours.fr/spip.php?page=acces">Laboratoire Archéologie et Territoires</a></small></p>
+					<p><small><strong>Rencontres <a href="http://thema.univ-fcomte.fr/theoq/fr/index.php">ThéoQuant</a> - 20-22 mai 2015</strong></small></br>
+					<small>Besançon (<a href="http://www.openstreetmap.org/?mlat=47.23854&mlon=6.01396#map=17/47.23854/6.01396">CCI</a> du Doubs)</small></p>
 				</section>
+				<!-- Génèse VICTOR -->
 				<section>
-<!-- Section qui présente mes approches de modélisation à base d'agents -->
-				  <section>
-						<h2>Géographie</h2>
-				    <h3>On parle d'espace dans la modélisation</h3>
-				    <h3>et des problématiques liées aux territoires et aux paysages</h3>
-				  </section>
 					<section>
-						<h3>Quand on parle de territoire</h3>
-						<blockquote cite="www.amazon.fr/s/ref=nb_sb_ss_c_0_17?__mk_fr_FR=ÅMÅŽÕÑ&url=search-alias%3Dstripbooks&field-keywords=les+mots+de+la+géographie&sprefix=les+mots+de+la+gé%2Caps%2C187">
-							&ldquo;Le territoire tient à la "projection" sur un espace donné des
-							structures spécifiques d'un groupe d'humains, qui inclut le mode de
-							découpage et de gestion de l'espace , l'aménagement de cet espace.
-							[...] concept relevant de la sociabilisation de l'espace.&rdquo;
-						</blockquote>
-						<p align="right">Brunet et al. 1992<p>
-						<h3>Quand on parle de terroir</h3>
-						<blockquote cite="http://www.cairn.info/resume.php?ID_ARTICLE=EG_404_0337">
-							&ldquo; [le] terroir est une portion de territoire, un
-							taxon, homogène à tous les points de vue, naturels et
-							socio-économiques&rdquo;
-						</blockquote>
-						<p align="right">Rouvellac et al., 2012<p>
-					</section>
-					<section>
-						<h3>Quand on parle de paysage</h3>
-						<blockquote cite="www.amazon.fr/s/ref=nb_sb_ss_c_0_17?__mk_fr_FR=ÅMÅŽÕÑ&url=search-alias%3Dstripbooks&field-keywords=les+mots+de+la+géographie&sprefix=les+mots+de+la+gé%2Caps%2C187">
-							&ldquo;Le paysage est [...] une apparence et une représentation : un
-							 arrangement d'objets visibles et perçus par un sujet à travers ses propres
-							filtres [...]&rdquo;
-						</blockquote>
-						<p align="right">Brunet et al. 1992<p>
-
-						<h3>Paysage et terroir ?</h3>
-						<blockquote cite="http://www.projetsdepaysage.fr/fr/du_paysage_au_terroir_viticole_de_forte_pente_a_la_recherche_des_leviers_du_management_territorial">
-							&ldquo;On peut alors considérer le paysage non pas comme une composante
-							du terroir, mais comme l'une de ses résultantes. Les paysages
-							viticoles deviennent alors la partie visible à l'échelle du
-							territoire de la complexité des mécanismes mis en jeu dans
-							la notion de terroir&rdquo;
-						</blockquote>
-						<p align="right">Delay 2013<p>
-
-
-					</section>
-				  <section>
-				  <h2>Thématique de recherche</h2>
-				      <blockquote cite="http://recherche.flsh.unilim.fr/geolab/2013/01/08/these-prospective-paysagere-des-territoires-viticoles-de-fortes-pentes/">
-						&ldquo;Prospective paysagère des territoires viticoles de fortes pentes&rdquo;
-				      </blockquote>
-				      <p>Une approche largement tournée vers la modélisation à base d'agents pour explorer la complexité des interactions Homme &#8596; Environnement dans un contexte viti-vinicole</p>
-				      <script src="https://embed.github.com/view/geojson/ElCep/vitiTerroir/master/data_geo/points_terrain_these.geojson"></script>
-				  </section>
-				  <section data-background="img/Emblemata_1624_nb.jpg" data-background-transition="slide" data-state="img-right">
-				    <h2>Axes de vitiTerroir</h2>
-				    <h3>et déambulation géographique</h3>
-				    <p align="left">En reprenant le document d'objectif de vitiTerroir, quelques exemples de modèles à base d'agents orientés viticulture</p>
-				    <ul>
-				      <li>Le changement climatique</li>
-							<ul>
-					  		<li>Acidity GIS</li>
-					  		<li>CELL ( Confusion Landscape Lobesias )</li>
-							</ul>
-				      <li>Modification potentielle des règles juridiques</li>
-							<ul>
-							  <li>MASiVe (MontAgne Innovation Viticulture)</li>
-							</ul>
-				      <li>Transformation des marchés</li>
-							 <ul>
-							  <li>Dion still alive</li>
-							  <li>VicTor ( VIticulture Consomation TOuRaine )</li>
-							 </ul>
-				      <li>Transformation probable des pratiques viticoles</li>
-							<ul>
-							  <li>CELL ( Confusion Landscape Lobesias )</li>
-							</ul>
-				      <li>Accentuation des processus de croissance urbaine</li>
-				    </ul>
-						<small>Gravure de <a href="http://en.wikipedia.org/wiki/File:Emblemata_1624.jpg">Adriaen van de Venne</a> (1589-1662)</small>
-				  </section>
-					<section>
-						<h2>Positionner conceptuellement un modèle</h2>
-						<p></p>
-						<img src="img/positionnement_modeles.svg" width="45%" style="float: right"/>
-						<ul style="width: 50%;">
-							<li>KISS &hArr; KIDS</li>
-							<li>Particulier &hArr; Stylisé</li>
-							<li>Data driven &hArr; concept driven</li>
-						</ul>
-					</section>
-				  <section data-background="img/binoculars.jpg" data-background-transition="slide">
-				    <h2>Ce que l'on observe avec ces modèles</h2>
-				    <h3>Des phénomènes et des échelles très différentes ! </h3>
-				    <p>Des exemples au travers de 4 modèles : </p>
-				    <ul>
-				      <li>CELL</li>
-				      <li>Acidity GIS</li>
-				      <li>Dion et ViCTor</li>
-				    <ul>
-				    </br>
-				    <small>Crédit photo : <a href="https://www.flickr.com/photos/fotofrivolity08/10422762685/in/photolist-6QBZoA-4ufwAb-dXiKrW-c5xUxS-82uEMC-nbPdC-8F8FGm-gT2odV-6U5L3N-bmsdPU-99Hfrw-84ZqTh-jie2n2-84ZqRG-5aD8WP-6UVgms-6URbF8-5HXPx8-57SFVF-odq1Ad-6bnfSQ-hrmWmx-cm1iZ-nM7ZfW-8BwM5v-84Zre3-8kNCt8-8kP1uB-8kRPx5-8kNCu2-8C4YkK-hABg8Q-aCMtE3-dQ5Fc6-7Vkpud-beq4TM-47S3zd-4vLy3J-beq4u6-beq4Yg-beq4MP-beq4Gg-beq53T-beq58D-6FEWis-g2UbZ-ejy8hT-nxg67y-5BLsVE-8pcL3G">Ellie</a> sur flickr</small>
-				  </section>
-				</section>
-<!-- Début des parties sur les modèles -->
-				<section>
-					<section data-background="img/apero.jpg" data-background-transition="slide">
-						<h2>Mise en bouche</h2>
-						<h3>4 modèles et 3 échelles</h3>
-						</br>
-						<small>Crédit photo : <a href="https://www.flickr.com/photos/richardmunckton/5281025166">
-							Richard Munckton</a> sur Flickr</small>
-					</section>
-<!-- CELL -->
-					<section>
-						<h2>CELL : </h2>
-						<h3>un modèle "data driven"</h3>
-					</section>
-					<section>
-						<h2>De quoi parle-t-on ?</h2>
-						<blockquote cite="http://fr.wikipedia.org/wiki/Eud%C3%A9mis">
-							&ldquo;L'Eudémis (<i>Lobesia botrana</i>) est un ravageur de la vigne aussi connu sous le nom de ver de la grappe ou de tordeuse (comme la cochylis et l'Eulia). &rdquo;
-						</blockquote>
-						<p align="right">Source : Wikipedia<p>
-						<img src="img/eudemis-adulte.png"></img>
-						<p><small>Source : <a href="http://www.bayer-agri.fr/protection-cultures/tordeuses-de-la-vigne/tordeuses-un-trio-infernal/">Bayer</a></small></p>
-					</section>
-					<section>
-						<h2>Des parcelles témoins</h2>
-						<h3>sur Collioure depuis 1999</h3>
-						<script src="https://embed.github.com/view/geojson/ElCep/vitiTerroir/master/data_geo/point_latourette.geojson
-"></script>
-					</section>
-					<section>
-						<h2>Le cycle biologique</h2>
-						<h3>le développement des <i>lobesia</i> est dépendant de la température</h3>
-						<img src="img/datalogger.jpg" alt="un data logger de terviclim" height="350" width="30%" style="float: right"/>
-						<p>Une litérature abondante : Bière et al. 1998, Roditakis et al. 2001,
-							 Milonas et al. 2001, etc</p>
-						<p>Depuis 2012, 11 parcelles sont équipées de capteurs de températures
-							(1 relevé toutes les 10 min), grâce a l'<a href="http://terviclim.in2p3.fr/">
-								ANR TerViClim</a></p>
-						<img src="img/temp_beart.png" alt="température capteur beart"  height="250"/>
-					</section>
-					<section>
-						<h2>Des observations de terrain</h2>
-						<p>Théoriquement 4 générations de <i>lobesia</i> par an. C'est généralement sur la 3<sup><small>ème</small></sup>génération que la récolte est sensible (grappe en formation)</p>
-						<img src="img/lobesia_real.png" height="350"></img>
-						<p>mais dans la pratique, la 3<sup><small>ème</small></sup> génération n'est pas toujours facile à observer !</p>
-					</section>
-					<section>
-						<h2>Formalisation</h2>
-						<ol>
-							<li>Un modèle "data driven"</li>
-							<ul>
-								<li>Des données SIG, de température et phénologiques (date de débourrement
-									, etc.)</li>
-								<li>Un modèle de populations statistiques issu de la littérature
-									(Developpé par <a href="http://cri.fmach.eu/Research/Sustainable-Agro-Ecosystems-and-Bioresources/Interactions-in-the-agro-ecosystems/people/Amelia-Caffarra">
-										A. Caffarra</a>) et porté en agent.</li>
-							</ul>
-						</ol>
-					</section>
-					<section>
-						<h3>Implémentation à base d'agents</h3>
-						<h4>Comportement de base</h4>
-						<video preload="auto" controls="controls" src="video/lobesia_free.webm" height="450"></video>
-					</section>
-					<!--<section>
-						<h4>Exploration des méthodes de lute</h4>
-						<video preload="auto" controls="controls" src="video/lobesia_confusion.webm" height="450"></video>
-					</section>-->
-					<section>
-						<h3>Les possibilités</h3>
-							<ul>
-								<li>Optimisations des campagnes de lutte intégrée</li>
-								<li>Exploration des effets de "passager clandestin"</li>
-								<li>Conséquences et adaptation au changement climatique</li>
-							</ul>
-						</br>
-						</br>
-						<h3>Les échelles</h3>
-							<ul>
-								<li><em>spatiale</em> : îlots de culture (groupes de parcelles)</li>
-								<li><em>temporelle</em> : la journée</li>
-							</ul>
-					</section>
-<!-- ACIDITY GIS -->
-					<section>
-						<h2>Acidity GIS</h2>
-						<h3>un modèle entre "concept driven"  </br> et "data driven"</h3>
-					</section>
-					<section data-background="img/grape_nb1.jpg" data-background-transition="slide">
-						<h2>Évaluation de l'adaptation au changement climatique</h2>
-						<p>L'étude du changement climatique est un champ de recherche très actuel.</p>
-						<p align="left">de manière générale deux approches s'opposent (controverse Hannah et al.
-							2013 <strong>VS</strong> van Leeuwen et al. 2013)</p>
-						<ul>
-							<li>Les tenants d'une évolution stricte</li>
-							<li>Les tenants de l'adaptation (programme LACCAVE : Long term
-								impacts and Adaptation to Climate ChAnge in Viticulture and Enology)</li>
-						</ul>
-						<small>Crédit photo :
-							<a href="https://www.flickr.com/photos/82088316@N05/8011959622">tribp</a> sur Flikr</small>
-					</section>
-					<section>
-						<h2>Températures et acidité de la récolte sur le Cru Banyuls</h2>
-						<img src="img/2cartes2012GIESCO-2.png" height="450" alt="carte de température et acidité Banyuls"></img>
-					</section>
-					<section>
-						<h2>Formalisation</h2>
-						<ol>
-							<li>Un modèle "data driven"</li>
-							<ul>
-								<li>Des données SIG, de température, de maturité (d'acidité totale,
-								alcool potentiel, etc.)</li>
-							</ul>
-							<li>Un modèle "concept driven"</li>
-							<ul>
-								<li>Des entretiens qui débouchent sur la formalisation de comportements</li>
-							</ul>
-						</ol>
-					</section>
-					<section>
-						<h2>Un modèle à base d'agents</h2>
-						<video preload="auto" controls="controls" src="video/acidityGIS_mu0.5.webm" height="450"></video>
-					</section>
-					<section>
-						<h3>Les possibilités</h3>
-							<ul>
-								<li>Explorer les possibilités offertes par le handicape structural
-									 de la pente dans le contexte du changement climatique (CC) ?</li>
-								<li>Evaluer l'impacte des décisions individuelles sur des indicateurs
-								&oelig;unologique</li>
-								<li>Evaluer l'impact des stratégies des coopératives sur le
-									paysage (Sont-elles un acteur du management territorial ? (à quels coûts ?))</li>
-								<li>Délimitation des capacités d'adaptation au changement climatique.
-								Le territoire peut-il conserver ses atouts paysagés (existence de
-								 gros ilots viticoles, maintien des murettes en pierres sèches, etc.)</li>
-							</ul>
-						</br>
-						</br>
-						<h3>Les échelles</h3>
-							<ul>
-								<li><em>spatiale</em> : une commune, une petite AOC</li>
-								<li><em>temporelle</em> : l'année (une campagne de culture)</li>
-							</ul>
-					</section>
-<!-- DION ET VICTOR -->
-					<section>
-						<h2>Dion et VicTor</h2>
-						<h3>deux modèles "concept Driven"</h3>
+						<h2>La génèse de VitiTerroir : VIcTOr</h2>
+						<h3><em>Dion still alive</em> et VicTor</h3>
+						<p>deux modèles "concept Driven" qui se sont enrichit l'un l'autre</p>
 					</section>
 					<section>
 						<h3>Objet d'étude : les paysages viticoles</h3>
@@ -331,12 +86,11 @@
 						<h2>Formalisation</h2>
 						<p>Deux modèles "concept driven"</p>
 						<ul>
-							<li><em>Dion Still Alive</em> : initié en réponse à un article de <strong>A. Banos
-									et al.</strong> sur <a href="http://cybergeo.revues.org/24877">cybergeo</a>
-									proposant de revisiter les travaux classiques des théories géographiques.
+							<li><em>Dion Still Alive</em> : initié en réponse à un article de <a href="http://cybergeo.revues.org/24877">Banos
+									<em>et al.</em></a> proposant de revisiter les travaux classiques des théories géographiques.
 								 	Pour nous R.Dion, 1952, "<a href="http://www.persee.fr/web/revues/home/prescript/article/geo_0003-4010_1952_num_61_328_13718">
 									Querelle Des Anciens et Des Modernes Sur Les Facteurs de La Qualité
-									Du Vin</a>", Annales de Géographie 61, no. 328 (1952): p417–431 </li>
+									Du Vin</a>"</li>
 							<li><em>VicTor </em>: initié avec <strong>S. Leturcq</strong> et
 								<strong>X. Rodier</strong> (LAT) pour explorer les basculements sur
 								 le temps long d'une viticulture de subsistance à une viticulture
@@ -351,19 +105,24 @@
 						<img src="img/ordo_victor.png" alt="schema sous modèle Victor" width="45%" height="327" />
 						<p align ="left">Ce qui va nous intéresser : </p>
 						<ul style="width: 45%;">
-							<li>L'évolution de la qualité dans le temps</li>
-							<li>L'ordonnancement des facteurs qui jouent sur cette qualité</li>
+							<li><small>L'évolution de la qualité dans le temps</small></li>
+							<li><small>L'ordonnancement des facteurs qui jouent sur cette qualité</small></li>
 						</ul>
 						<ul style="width: 45%;">
-							<li>L'influence de la compétition pour l'espace de deux productions
-								 agricoles</li>
-							<li>L'influence sur cette compétition de l'évolution des marchés</li>
+							<li><small>L'influence de la compétition pour l'espace de deux productions
+								 agricoles</small></li>
+							<li><small>L'influence sur cette compétition de l'évolution des marchés</small></li>
 						</ul>
 					</section>
 					<section>
 						<h2>Dion Still Alive</h2>
-						<h3>La qualité est-elle une fonction du temps ?</h3>
+						<p>La qualité est-elle une fonction du temps ?</p>
 						<video preload="auto" controls="controls" src="video/isotrope.webm"></video>
+					</section>
+					<section>
+						<h2>VIcTOr</h2>
+						<p>Hétérogénéité spatiale et adaptation au marché</p>
+						<video	preload="auto" controls="controls" src="video/victor.webm"></video>
 					</section>
 					<section>
 						<h3>Les possibilités</h3>
@@ -380,64 +139,85 @@
 							</ul>
 					</section>
 				</section>
-<!--DIAPO SUR LES LOGCIELS LIBRES-->
+
+				<!-- VitiTerroir Présentation-->
 				<section>
-				  <h3>La minute logiciel libre</h3>
-				  <ol>
-				    <li>des modèles multi-agents sur <a href="http://ccl.northwestern.edu/netlogo/">Netlogo</a></li>
-				    <li>des analyses de sensibilité avec <a href="http://www.openmole.org/">OPENMOLE</a> sur <a href="http://www.unilim.fr/sci/wiki/cali/accueil">CALI</a></li>
-				    <li>des explorations de résultats avec <a href="http://www.r-project.org/">R</a></li>
-				  </ol>
-				  <img width="300" height="300" src="img/Official_gnu.svg.png" alt="logo gnu fondation"></br>
-				  <small>Crédit image : <a href="http://www.gnu.org/graphics/gnusvgart.html">GNU fondation</a></small>
+					<section>
+						<h2>La naissance du projet VitiTerroir</h2>
+					</section>
+					<section>
+						<h2>Le manifeste</h2>
+						<p align="left"><strong>L’hypothèse : </strong> les interactions jouent un rôle-clef dans l’organisation de la filière viti-vinicole et impacte largement la transformation des territoires et des paysages viticoles.</p>
+						<p align="left"><strong>L’objectif</strong> de développer une palette de modèles propres à chaque discipline, permettant de simuler (de manière indépendante) l’impact des multiples facteurs sur le fonctionnement des systèmes viti-vinicoles.</p>
+						<p>le site du projet : <a href="http://vititerroi.hypotheses.org/">http://vititerroi.hypotheses.org/</a></p>
+					</section>
+					<section data-background="img/One_Ring_inscription.png" data-background-transition="slide">
+						<h2>Un modèle pour les gouverner tous ?</h2>
+						<p>Par la suite, nous proposons de regrouper les modèles au sein d’un même simulateur pour créer un méta-modèle capable de simuler la dynamique complexe des territoires viticoles en prenant en compte, cette fois-ci, l’interaction des processus étudiés en amont (facteurs économiques, sociaux, historiques, géologiques, biologiques, etc.).</p>
+						<small>crédit photo : <a href="http://commons.wikimedia.org/wiki/File:One_Ring_inscription.svg?uselang=fr">Ssolbergj </a> on Wikipedia</small>
+					</section>
+					<section data-background="img/mordor.jpg" data-background-transition="slide">
+						<h2>L'ambition</h2>
+						<p>Cet outil à dimension prospective permettra aussi d’affiner la compréhension historique des territoires viticoles ligériens et de renforcer leur caractère patrimonial.</p></br>
+						<small>crédit photo : <a href="https://www.flickr.com/photos/skulik/16205039117/in/photolist-qFZ4ya-9esrCm-9ffzj2-9e6MuP-dC5emp-dCrSML-pfMxMN-aAQpCX-dC5adt-dC56E8-8tvTj-8sg5c-6bv4jz-b1FiYz-adYv9D-adYvze-pbAdsU-2kArDb-8tvF7-8tubB-7nRiX4-9eXnjX-27e8vc-7n34ML-brEs2b-6GWpNw-8tinw-8sgwy-8sfGU-9RourT-8si5X-8tuu1-9hAowH-9hAovn-8qycRo-9eH6SR-cbjKJN-9f3RiW-oFjRvJ-aAT8d7-aexfiw-8t9vx-8shMv-8t9c3-8tnPY-5EBJFE-oHjPm7-8tkVR-8tf2h-8sh7n">Oscar Gende Villar</a> on Flick'r</small>
+					</section>
 				</section>
-<!--CONCLUSION-->
-			<section>
+				<!--Les premiers résultat de vitiTerroir-->
 				<section>
-					<h2>Conclusion</h2>
+					<section>
+						<h3>Les premiers résultats</h3>
+					</section>
+					<section>
+						
+					</section>
 				</section>
+				<!--Conclusion-->
 				<section>
-					<h2>Nous disions ? </br>
-					<strong>Vititerroir</strong> pour un géographe?</h2>
+					<section>
+						<h2>Conclusion</h2>
+					</section>
+					<section>
+						<h2>Nous disions ? </br>
+						<strong>Vititerroir</strong> pour un géographe?</h2>
+					</section>
+					<section data-background="img/directions.jpg" data-background-transition="slide">
+						<h2>Plusieurs directions ?</h2>
+						<h3>Pour la modélisation</h3>
+						<p>
+							On peut souligner (si besoin) le caractère complexe des systèmes
+							viti-vinicoles. Il importe donc de prendre garde à :
+						</p>
+						<ul>
+							<li>la diversité d'échelles spatiales</li>
+							<li>la diversité d'agents modélisés</li>
+							<li>etc.</li>
+						</ul>
+						<p>
+							qui modifient la manière dont on appréhende la combinaison
+							de trois sous-systèmes : le sociosystème, l’écosystème et le géosystème
+						</p>
+						<h3>Les SMA, l'espace et le temps</h3>
+						<p align="left" >Les SMA permettent :</p>
+						<ol>
+							<li>d'accompagner la réflexion du chercheur</li>
+							<li>d'explorer des comportements et des configurations difficilement
+								envisageables</li>
+							<li>de préparer à la réception et à l'identification de comportements
+								réels</li>
+						</ol>
+					</section>
+					<section>
+						<h2>Deux mouvements parallèles</h2>
+						<ul>
+							<li>Un mouvement historique : ou la formalisation des interactions
+							sera plus conceptuelle et schématique (KISS) &rarr; Expliquer</li>
+						</ul>
+						<ul>
+							<li>Un mouvement à échelles imbriquées, plus descriptif ou les interactions
+							auront une granularité plus fine (KIDS) &rarr; prédire/accompagner</li>
+						</ul>
+					</section>
 				</section>
-				<section data-background="img/directions.jpg" data-background-transition="slide">
-					<h2>Plusieurs directions ?</h2>
-					<h3>Pour la modélisation</h3>
-					<p>
-						On peut souligner (si besoin) le caractère complexe des systèmes
-						viti-vinicoles. Il importe donc de prendre garde à :
-					</p>
-					<ul>
-						<li>la diversité d'échelles spatiales</li>
-						<li>la diversité d'agents modélisés</li>
-						<li>etc.</li>
-					</ul>
-					<p>
-						qui modifient la manière dont on appréhende la combinaison
-						de trois sous-systèmes : le sociosystème, l’écosystème et le géosystème
-					</p>
-					<h3>Les SMA, l'espace et le temps</h3>
-					<p align="left" >Les SMA permettent :</p>
-					<ol>
-						<li>d'accompagner la réflexion du chercheur</li>
-						<li>d'explorer des comportements et des configurations difficilement
-							envisageables</li>
-						<li>de préparer à la réception et à l'identification de comportements
-							réels</li>
-					</ol>
-				</section>
-				<section>
-					<h2>Deux mouvements parallèles</h2>
-					<ul>
-						<li>Un mouvement historique : ou la formalisation des interactions
-						sera plus conceptuelle et schématique (KISS) &rarr; Expliquer</li>
-					</ul>
-					<ul>
-						<li>Un mouvement à échelles imbriquées, plus descriptif ou les interactions
-						auront une granularité plus fine (KIDS) &rarr; prédire/accompagner</li>
-					</ul>
-				</section>
-			</section>
 
 <!--A REPRENDRE LES PTS FORT DE VITITERROIR-->
 				<!-- <section>
@@ -465,23 +245,22 @@
 <!--DIAPO DE FIN-->
 				<section data-background="img/fin.jpg" data-background-transition="slide">
 					<h2>Merci de votre </br> Attention</h2>
-					<img height="200" src="img/github.png" alt="logo gitHub"></img>
-					<p>vous pouvez retrouver cette présentation sur GitHub</p>
+					<img height="150" src="img/github.png" alt="logo gitHub"></img>
+					<p>Retrouvez cette présentation sur GitHub : </br><a href="https://github.com/ElCep/vitiTerroir">http://unil.im/uJPV2</a></p>
 					<img height="100" src="img/QR_code_contact.png" alt="contactez moi!"></img></br>
 					<small>réalisé avec <a href="https://github.com/hakimel/reveal.js">reveal.js</a></small></br>
-					<small>crédit photo : <a href="http://www.flickr.com/photos/misnyot/6357634305/sizes/m/in/photostream/">Thomas Misnyovszki </a> on Flick'r</small>
+					<small>crédit photo : <a href="http://www.flickr.com/photos/misnyot/6357634305/sizes/m/in/photostream/">Thomas Misnyovszki</a> on Flick'r</small>
 				</section>
-
 			</div>
 
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+		<script src="js/reveal.js"></script>
 
 		<script>
 
-			// Full list of configuration options available here:
+			// Full list of configuration options available at:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				controls: true,
@@ -489,21 +268,16 @@
 				history: true,
 				center: true,
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
-
-				// Optional libraries used to extend on reveal.js
+				// Optional reveal.js plugins
 				dependencies: [
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
 					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
 				]
 			});
 
