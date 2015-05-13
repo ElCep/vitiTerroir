@@ -1,9 +1,0 @@
-{
-"type": "FeatureCollection",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-                                                                                
-"features": [
-{ "type": "Feature", "properties": { "id": 1, "Nom": "AOC du cru Banyuls", "cooperatio": "yes" }, "geometry": { "type": "Point", "coordinates": [ 3.127443187100294, 42.480639932844895 ] } },
-{ "type": "Feature", "properties": { "id": 2, "Nom": "Val di Cembra", "cooperatio": "yes" }, "geometry": { "type": "Point", "coordinates": [ 11.219560100543967, 46.173098856098335 ] } }
-]
-}
