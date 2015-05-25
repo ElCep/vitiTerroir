@@ -13,5 +13,6 @@ Chaque présentation fait l'objet d'une branche git. La branche master étant la
 Les branches : 
   
   * vitiTerroir4geographer : présentation d'ouverture du projet vititerroir le 16 septembre 2014
-  * master : presentation pour les rencontre [ThéoQuant](http://thema.univ-fcomte.fr/theoq/fr/index.php) du 20 au 22 mai 2015 à Besançon
+  * vitiTerroir4Theoquant : presentation pour les rencontre [ThéoQuant](http://thema.univ-fcomte.fr/theoq/fr/index.php) du 20 au 22 mai 2015 à Besançon
+  * master : presentation Bergerac pour le 26 mai
 
