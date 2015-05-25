@@ -6,7 +6,7 @@
 
 		<title>VitiTerroir reavel.js</title>
 
-		<meta name="description" content="VitiTerroir pour ThéoQuant">
+		<meta name="description" content="VitiTerroir avancé Bergerac">
 		<meta name="author" content="Etienne DELAY">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -41,169 +41,19 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h2>Simulation des dynamiques spatiales d'un territoire agro-viticole</h2>
-					<h3>premier pas vers le modèle VitiTerroir</h3>
+					<h2>Présentation des travaux du Groupe C avec discussion : </h2>
+					<h3>Les spatialistes</h3>
 					<p>
-						<small>Présentation : <a href="http://recherche.flsh.unilim.fr/geolab/etienne-delay/">Etienne DELAY</a></small></br>
-						<small>Avec : Adrien <a href="http://www.univ-tours.fr/m-lammoglia-adrien-421040.kjsp">LAMMOGLIA</a>, 
-						Samuel <a href="http://www.univ-tours.fr/m-leturcq-samuel-185649.kjsp">LETURCQ</a> et
-						 &#201;ric <a href="http://geolab.univ-bpclermont.fr/spip.php?article56">ROUVELLAC</a></small>
+						<small>Avec : <a href="http://recherche.flsh.unilim.fr/geolab/etienne-delay/">Etienne DELAY</a>, Jacques Gautier, Eric Rouvellac, Xavier Rodier</small>
 					</p>
-					<p><small><strong>Rencontres <a href="http://thema.univ-fcomte.fr/theoq/fr/index.php">ThéoQuant</a> - 20-22 mai 2015</strong></small></br>
-					<small>Besançon (<a href="http://www.openstreetmap.org/?mlat=47.23854&mlon=6.01396#map=17/47.23854/6.01396">CCI</a> du Doubs)</small></p>
+					<p><small><strong>séminaire <a href="http://vititerroi.hypotheses.org/">VitiTerroir</a> - 26 mai 2015</strong></small></br>
+					<small>Tours (<a href="http://www.openstreetmap.org/?mlat=47.36393&mlon=0.68036#map=19/47.36393/0.68036">CITERES-LAT</a>)</small></p>
 				</section>
-				<!-- Génèse VICTOR -->
+				<!--Les premiers résultats de vitiTerroir-->
 				<section>
 					<section>
-						<h2>La génèse de VitiTerroir</h2>
-					</section>
-					<section>
-						<h3>Objet d'étude : les paysages viticoles</h3>
-						<p>Comment explorer des comportements passés pour en comprendre les
-							configurations actuelles ?</p>
-						<img src="img/pano-banyuls.jpg">
-						<small>Le vignoble de <a href="http://www.openstreetmap.org/?mlat=42.4794&mlon=3.1282#map=13/42.4795/3.1281">Banyuls-sur-Mer</a></small></br>
-						<p>En s'intéressant aux zones catastrophiques (au sens de R.Thom 1989)
-							pour approcher les limites de validité du modèle.</p>
-					</section>
-					<section>
-						<h3>Prédire &ne; Expliquer</h3>
-						<blockquote cite="http://www.amazon.fr/Pr%C3%A9dire-nest-expliquer-Rene-Thom/dp/2081224984/ref=sr_1_1?ie=UTF8&qid=1384529013&sr=8-1&keywords=predire+n%27est+pas+expliquer">
-						&ldquo;L'expérimentation par elle-même ne peut guère conduire à des
-						progrès [...]. Elle peut permettre de contrôler que si on à une
-						théorie, donc si l'on dispose d'outils d'exploration. La théorisation
-						[...] est liée à la possibilité de plonger le réel dans un virtuel
-						imaginaire, doté de propriétés génératives[...]&rdquo;</br>
-						</blockquote>
-						<p align="right">R. Thom 2009</p>
-						<a href="http://www.amazon.fr/Pr%C3%A9dire-nest-expliquer-Rene-Thom/dp/2081224984/ref=sr_1_1?ie=UTF8&qid=1384529013&sr=8-1&keywords=predire+n%27est+pas+expliquer">
-						  <img width="160" height="238" src="img/thom.jpg" alt="couverture livre René Thom">
-						</a>
-					</section>
-					<section>
-						<h2>Formalisation</h2>
-						<p>Deux modèles "concept driven"</p>
-						<ul>
-							<li><em>Dion Still Alive</em> : initié en réponse à un article de <a href="http://cybergeo.revues.org/24877">Banos
-									<em>et al.</em></a> proposant de revisiter les travaux classiques des théories géographiques.
-								 	Pour nous, R.Dion 1952, "<a href="http://www.persee.fr/web/revues/home/prescript/article/geo_0003-4010_1952_num_61_328_13718">
-									Querelle Des Anciens et Des Modernes Sur Les Facteurs de La Qualité
-									Du Vin</a>"</li>
-							<li><em>VicTor </em>: initié avec <strong>S. Leturcq</strong> et
-								<strong>X. Rodier</strong> (LAT) pour explorer les basculements sur
-								 le temps long d'une viticulture de subsistance à une viticulture
-								 d'exportation. Quelles sont les conséquences de la compétition
-								 spatiale entre différents types d'agriculture et leurs
-							   réponses à différents marchés.</li>
-						</ul>
-					</section>
-					<section>
-						<h2>Dion & Victor</h2>
-						<img src="img/ordo_dion.png" alt="schema sous modèle Dion" width="45%" />
-						<img src="img/ordo_victor.png" alt="schema sous modèle Victor" width="45%" height="327" />
-						<p align ="left">Ce qui va nous intéresser : </p>
-						<ul style="width: 45%;">
-							<li><small>L'évolution de la qualité dans le temps</small></li>
-							<li><small>L'ordonnancement des facteurs qui jouent sur cette qualité</small></li>
-						</ul>
-						<ul style="width: 45%;">
-							<li><small>L'influence de la compétition pour l'espace de deux productions
-								 agricoles</small></li>
-							<li><small>L'influence sur cette compétition de l'évolution des marchés</small></li>
-						</ul>
-					</section>
-					<section>
-						<h2>Dion Still Alive</h2>
-						<p>La qualité est-elle une fonction du temps ?</p>
-						<video preload="auto" controls="controls" src="video/isotrope.webm"></video>
-					</section>
-					<section>
-						<h2>VIcTOr</h2>
-						<p>Hétérogénéité spatiale et adaptation au marché</p>
-						<video	preload="auto" controls="controls" src="video/victor.webm"></video>
-					</section>
-					<section>
-						<h3>Les possibilités</h3>
-							<ul>
-								<li>Plonger le réel dans un virtuel imaginaire, doté de propriétés
-									 génératives &rarr; Théorisation</li>
-							</ul>
-						</br>
-						</br>
-						<h3>Les échelles</h3>
-							<ul>
-								<li><em>spatiale</em> : régions</li>
-								<li><em>temporelle</em> : l'année (une campagne de culture)</li>
-							</ul>
-					</section>
-				</section>
-
-				<!-- VitiTerroir Présentation-->
-				<section>
-					<section>
-						<h2>La naissance de VitiTerroir</h2>
-					</section>
-					<section>
-						<h2>Le manifeste</h2>
-						<p align="left"><strong>L’hypothèse : </strong> les interactions jouent un rôle-clef dans l’organisation de la filière viti-vinicole et impactent largement la transformation des territoires et des paysages viticoles.</p>
-						<p align="left"><strong>L’objectif</strong> : simuler, dans leur dimension spatiale, l'évolution et les transformations des systèmes viti-vinicoles en région Centre, en utilisant une approche interdisciplinaire et en prenant appui sur les concepts et méthodologies attachés aux sciences de la complexité.</p>
-						<p align="left"><strong>Résolument interdiciplinaire</strong> : historiens, archéologues, géographes, biologistes, géologues, juristes, économistes, interprofession.</p>
-						<p>le site du projet : <a href="http://vititerroi.hypotheses.org/">http://vititerroi.hypotheses.org/</a></p>
-					</section>
-					<section data-background="img/9kings.jpg" data-background-transition="zoom">
-						<h2>Phase 1 : forger les anneaux de pouvoir</h2>
-						<p align="left">Modélisation de chaque processus : </p>
-						<ul>
-							<li>Travail approfondi avec les groupes disciplinaires</li>
-							<li>Privilégier le principe de parcimonie: programmation de modèles simples (linéaires)</li>
-							<li>Exploration et vérification de chaque modèle</li>
-						</ul>
-						
-					</section>
-					<section data-background="img/One_Ring_inscription.png" data-background-transition="zoom">
-						<h2>Phase 2 : un pour les gouverner tous ?</h2>
-						<ul>
-							<li>Regroupement des modèles et ordonnancement des procédures</li>
-							<li>Homogénéisation des conditions de simulation (échelles spatiales et temporelles, environnement, paramètres initiaux, etc.)</li>
-							<li>Réflexion et explication des résultats de simulation </li>
-							<ul>
-								<li>Protocole de simulation cohérent</li>
-								<li>Indicateurs et traitement des données compréhensibles par tous</li>
-							</ul>
-						</ul>
-						
-						<small>crédit photo : <a href="http://commons.wikimedia.org/wiki/File:One_Ring_inscription.svg?uselang=fr">Ssolbergj</a> on Wikipedia</small>
-					</section>
-					<section data-background="img/mordor.jpg" data-background-transition="zoom">
-						<h2>L'ambition</h2>
-						<p>Cet outil, à dimension prospective, permettra d’affiner la compréhension historique des territoires viticoles ligériens et de renforcer leur caractère patrimonial.</p></br>
-						<small>crédit photo : <a href="https://www.flickr.com/photos/skulik/16205039117/in/photolist-qFZ4ya-9esrCm-9ffzj2-9e6MuP-dC5emp-dCrSML-pfMxMN-aAQpCX-dC5adt-dC56E8-8tvTj-8sg5c-6bv4jz-b1FiYz-adYv9D-adYvze-pbAdsU-2kArDb-8tvF7-8tubB-7nRiX4-9eXnjX-27e8vc-7n34ML-brEs2b-6GWpNw-8tinw-8sgwy-8sfGU-9RourT-8si5X-8tuu1-9hAowH-9hAovn-8qycRo-9eH6SR-cbjKJN-9f3RiW-oFjRvJ-aAT8d7-aexfiw-8t9vx-8shMv-8t9c3-8tnPY-5EBJFE-oHjPm7-8tkVR-8tf2h-8sh7n">Oscar Gende Villar</a> on Flick'r</small>
-					</section>
-				</section>
-				<!--Les premiers résultat de vitiTerroir-->
-				<section>
-					<section>
-						<h2>Orientations et premiers résultats</h2>
-					</section>
-					<section>
-						<h3>Plusieurs échelles et type de modèles</h3>
-						<p align="left">Des modèles :</p>
-						<ul>
-							<li>KISS (Keep It Simply and Stupid) et stylisé pour les juristes et économistes</li>
-							<li>&#192; petite échelle spatiale et KIDS (Keep It Descriptive and Stupid) pour les historiens et géographes</li>
-							<li>&#192; très grande échelle spatiale et KIDS pour les géologues et biologistes</li>
-						</ul>
-						<aside class="notes">
-							<h2>Deux mouvements parallèles</h2>
-							<ul>
-								<li>Un mouvement historique : où la formalisation des interactions
-								sera plus conceptuelle et schématique (KISS) &rarr; Expliquer</li>
-							</ul>
-							<ul>
-								<li>Un mouvement à échelles imbriquées, plus descriptif où les interactions
-								auront une granularité plus fine (KIDS) &rarr; prédire/accompagner</li>
-							</ul>
-						</aside>
+						<h2>L'atlas des dynamiques</h2>
+						<h3>contextes et données</h3>
 					</section>
 					<section>
 						<h3>Focus sur l'espace</h3>
@@ -220,7 +70,71 @@
 						</aside>
 					</section>
 					<section>
-						<h3>Premiers résultats</h3>
+						<h3>Les données</h3>
+						<ul>
+							<li>Le CVI pour 2005,  2010 et 2014</li>
+							<li>Le cadastre unifier de l'IGN</li>
+							<li>Le RGA 1955, 1979, 1988 et 2000</li>
+							<li>UN DEM à une résolution de 25m (IGN)</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Viticulutre départementale</h3>
+						<img src="img/class_viti_dorgogne_2014.png" alt="classification viticole dep dordogne" width="45%"></img>
+						<img src="img/evol_viti_dorgogne.png" alt="évolution des surfaces viticoles" width="45%"></img>
+					</section>
+					<section>
+						<h3>Les AOC Bergerac</h3>
+						<img src="img/AOC_bergerac.jpeg" alt="Les différentes AOC"></img>
+					</section>
+					<section>
+						<h3>Les surfaces viticoles entre 1970 et 2014</h3>
+						<img src="img/gg_evol_viti_aoc.png" alt="surfaces viti de l'AOC entre 1970 et 2014"></img>
+					</section>
+					<section>
+						<h3>L'emprise de la vigne en 2014</h3>
+						<img src="img/parcelles_viti_aoc_bergerac_2014.jpeg" alt="surfaces viti en 2014"></img>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>méthodologie</h2>
+					</section>
+					<section>
+						<h3>Manipulation du DEM : Pentes et orientations</h3>
+						<img src="img/slope_aoc_bergerac.png" alt="classification des pentes dur l'aoc bergerac" width="45%"></img>
+						<img src="img/aspect_aoc_bergerac.png" alt="classification des orientations AOC" width="45%"></img>
+					</section>
+					<section>
+						<h3>Manipulation du DEM : radiations</h3>
+						<p>A partir des altitudes, de la pente et des orientations on peut calculer la sommes radiative sur la periode végétative</p>
+						<img src="img/radiation_global.png" alt="classification des pentes dur l'aoc bergerac" width="75%"></img>
+					</section>
+					<section>
+						<h3>Les facteurs abiotiques et le vignoble</h3>
+						<p>Par ANOVA, on teste l'influence des facteurs abiotiques sur les dynamiques diachroniques du vignoble</p>
+						<ul>
+							<li>Pas de correlations avec les radiations ni avec les expositions</li>
+							<li>Une correlation assez bonne sur les valeurs de pentes et d'altitude</li>
+						</ul>
+						<img src="img/gg_density_slope.png" alt="densité alti" width="45%"></img>
+						<img src="img/gg_density_alti.png" alt="densité alti" width="45%"></img>
+					</section>
+					<section>
+						<h3>L'abandon : une dynamiques spatiale ?</h3>
+						<img src="img/heatmap_2000_2014.png" alt="abandon annuel" width="45%"></img>
+					</section>
+					<section>
+						<h3>Ville et vignoble : une concurrence ? </h3>
+						<img src="img/vignobleVSurabnisation.jpeg" alt="abandon annuel"></img>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Discussion</h2>
+					</section>
+					<section>
+						<h3>Premières interprétations</h3>
 						<small>
 						<table>
 							<tr>
@@ -257,57 +171,13 @@
 						</small>
 					</section>
 					<section>
-						<h3>Un exemple sur les AOC Bergerac</h3>
-						<img src="img/heatmap_2000_2014.png" alt="carte de chaleur" width="400"/>
-					</section>
-					<section data-background="img/gollum.jpg" data-background-transition="zoom">
-						<h3>Les difficultés à venir pour la modélisation</h3>
-						<p>La modélisation est pour l'instant utilisée comme un outil d'accompagnement de la recherche et de la création de savoir pour les chercheurs</p>
-						<p align="left">Les premiers écueils visbles :</p>
+						<h3>Les prolongements</h3>
+						<p>Nous sommes maintenant à la recherche d'autres données pour améliorer notre vison des dynamiques spatiales</p>
 						<ul>
-							<li>Les échelles spatiales et temporelles imbriquées</li>
-							<li>Des constructions interdisciplinaires à partager</li>
-							<li>La diversité d'agents modélisés</li>
-							<li>Des modèles théoriques, ou des modèles opérationnels?</li>
-						</ul>
-						</br>
-						<small>crédit photo : <a href="https://www.flickr.com/photos/arbron/8329465718/">Jeff Hitchcock</a> on Flick'r</small>
-					</section>
-				</section>
-				<!--Conclusion-->
-				<section>
-					<section>
-						<h2>Conclusion</h2>
-					</section>
-					<section>
-						<h3>Force et faiblesse</h3>
-						<p>
-							On peut souligner (si besoin) le caractère complexe des systèmes
-							viti-vinicoles. Il importe donc de prendre garde à :
-						</p>
-						<ul>
-							<li>la diversité d'échelles spatiales</li>
-							<li>la diversité d'agents (à) modélisés</li>
-							<li>la diversité des comportements des sociétés, etc</li>
-						</ul>
-						<p>
-							qui modifient la manière dont on appréhende la combinaison
-							de trois sous-systèmes : le sociosystème, l’écosystème et le géosystème
-						</p>
-						<p align="left" >Les SMA permettent (entre autres) :</p>
-						<ol>
-							<li>d'explorer des comportements et des configurations difficilement
-								envisageables</li>
-							<li>de préparer à la réception et à l'identification de comportements
-								réels</li>
-						</ol>
-					</section>
-					<section data-background="img/tunnel.jpg" data-background-transition="zoom">
-						<h3>VitiTerroir c'est donc ?</h3>
-						<ul>
-							<li>Un projet original en ce qu'il prend en compte le caractère complexe du système viti-vinicole, conçu comme la combinaison de trois sous-systèmes : le sociosystème, l’écosystème et le géosystème (Chouquer 2000)</li>
-							<li>Un projet qui se veut orienter actions : les filières professionnelles sont particulièrement intéressées par les développements de VitiTerroir, qui doit ouvrir sur une meilleure connaissance et compréhension de la fabrique des territoires des vins.</li>
-							<li>Un projet qui débouchera sur un outil prototype de simulation, initiateur d'un véritable outil d'aide à la décision pour les politiques publiques.</li>
+							<li>Geologie/pédologie</li>
+							<li>Prix du litre de vin par AOC et par ans</li>
+							<li>Prix du foncier</li>
+							<li>Prix du bâtis</li>
 						</ul>
 					</section>
 				</section>
