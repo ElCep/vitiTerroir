@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 	<head>
 		<meta charset="utf-8">
 
-		<title>VitiTerroir reavel.js</title>
+		<title>Soutenance de thèse Etienne DELAY</title>
 
-		<meta name="description" content="VitiTerroir avancé Bergerac">
+		<meta name="description" content="Soutenance de thèse Etienne DELAY">
 		<meta name="author" content="Etienne DELAY">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -40,156 +40,500 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
-					<h2>Présentation des travaux du Groupe C avec discussion : </h2>
-					<!-- <h3>Les spatialistes</h3> -->
-					<p>
-						<small>Avec : <a href="http://recherche.flsh.unilim.fr/geolab/etienne-delay/">Etienne DELAY</a>, Jacques Gautier, Eric Rouvellac, Xavier Rodier</small>
-					</p>
-					<p><small><strong>séminaire <a href="http://vititerroi.hypotheses.org/">VitiTerroir</a> - 26 mai 2015</strong></small></br>
-					<small>Tours (<a href="http://www.openstreetmap.org/?mlat=47.36393&mlon=0.68036#map=19/47.36393/0.68036">CITERES-LAT</a>)</small></p>
-				</section>
-				<!--Les premiers résultats de vitiTerroir-->
+				<!-- Au commencement ? Les sources du doctorat ?-->
 				<section>
 					<section>
-						<h2>L'atlas des dynamiques</h2>
-						<h3>contextes et données</h3>
+					<h3>Réflexions géographiques sur l'usage des systèmes multi-agents dans la compréhension des processus d'évolution des territoires viticoles de fortes pentes</h3>
+					<h4>Le cas de la Côte Vermeille et du <em>val di Cembra</em></h4>
+					<p style="text-align:center;">
+						<small>Présentée et soutenue par <a href="http://geolab.univ-bpclermont.fr/spip.php?article184">Etienne Delay</a></small> </br>
+						<small>Sous la direction de : &Eacute;. Rouvellac, N. Becu et Ph. Allée.</small></br>
+						<small>&#201;cole doctorale n° 526 &#171;Sociétés et Organisation&#187;</small></br>
+						<small>10 juin 2015</small></br>
+						<img data-src="./img/geolab-pantone.png" alt="logo geolab" height="50"
+					</p>
+					</section>
+					<section data-background="./img/caapg_savoie.jpg" data-background-transition="zoom">
+						<h3>Parcours</h3>
+						<p>L'itinéraire géographique et viticole 2008-2015</p>
+						<ul>
+							<li>2008 - 2009 - Licence 3 : <span style="color:orange;"> Stage au Centre d'Ampélographie Alpine Pierre Galet</span></li>
+							<li>2009 - 2010 - Master 1 : <span style="color:orange;">Stage au Centre d'&#201;tude de Recherche et de valorisation de la viticulture de montagne</span></li>
+							<li>2010 - 2011 - Master 2 : <span style="color:orange;">Ingénieur d'étude au centre de transfert technologique de la <i>Fondazione E. Mach </i>(IT)</span></li>
+							<li>2011 - 2015 - Thèse de géographie à l'université de Limoges</li>
+							<li>2015 - 2016 - Post-doctorat au seins de GEOLAB UMR 6041</li>
+						</ul>
+					</section>
+					<!-- <section>
+						<h3>Géolab, limoges & viticulture ?</h3>
+						<table>
+							<td>
+								<ul>
+									<li>Programmes de recherches sur la viticulture</li>
+									<li>Ambiance et conditions de travail</li>
+									<li>Une relation de confiance</li>
+									<li>Un financement régional</li>
+								</ul>
+							</td>
+							<td>
+								<img width="500" data-src="./img/gg_bassins.png" alt="basin viticole selon l'agreste">
+							</td>
+						</table>
+					</section> -->
+				</section>
+				<!--TERRAIN D'ETUDE ET PROBLEMATIQUES-->
+				<section>
+					<section>
+						<h2>Introduction</h2>
 					</section>
 					<section>
-						<h3>Focus sur l'espace</h3>
-						<script src="https://embed.github.com/view/geojson/ElCep/vitiTerroir/master/data_geo/points_terrain_etude.geojson"></script>
-						<ul>
-							<li>La Touraine : en temps qu'objet central de l'étude</li>
-							<li>Le Bergerac : comme vignoble témoin</li>
-						</ul>
-						<p>Explorer et comprendre les mécanismes et les objectifs qui sont mobilisés par les sociétés viticoles</p>
+						<h3>La viticulture de pentes : zone de production d'imaginaires</h3>
+						<img data-src="./img/lavaux.JPG" alt="viticulture de LAVAUX" height="560" style="float: left;">
+						<img data-src="./img/douro_hommes.jpg" alt="plantation dans le douro" height="560" style="float: right;">
+					</section>
+					<!-- <section>
+						<h3>... </h3>
+						<img data-src="./img/douro_hommes.jpg" alt="plantation dans le douro" height="560">
+						</br>
+						<small>Source : CERVIM 2006</small>
+					</section> -->
+					<section>
+						<h2>Définitions des problématiques et des terrains d'études</h2>
+					</section>
+					<section>
+						<h3>Le contexte général</h3>
+						<ol>
+							<li>La viticulture de montagne et de fortes pentes ne fait pas l'objet d'études spécifiques</li>
+							<li>La tendance est à l'abandon des pentes au profit d'une viticulture mécanisée en plaine</li>
+						</ol>
+						<p>Réfléchir et explorer les influences des spécificitées liées à la pente dans les pratiques socio-spatiales viticoles</p>
 						<aside class="notes">
-						<ul>
-							<li>Est-ce qu'on peut trouver des constances?</li>
-						</ul>
+							<ol>
+								<li>La viticulture de montagne et de fortes pentes ne fait pas l'objet d'études spécifiques. Elle est par contre souvant intégrée dans des réflexions viticoles au sens large</li>
+							</ol>
 						</aside>
 					</section>
 					<section>
-						<h3>Les données</h3>
+						<h3>Les spécificités de la viticulture de pentes</h3>
 						<ul>
-							<li>Le CVI pour 2005,  2010 et 2014</li>
-							<li>Le cadastre unifié de l'IGN</li>
-							<li>Le RGA 1970, 1979, 1988 et 2000</li>
-							<li>Un DEM à une résolution de 25m (IGN)</li>
+							<li>Des terrains souvent pauvres, rapidement reconnus comme qualitatifs</li>
+							<li>Des conditions de travail difficiles, qui interdisent la mécanisation</li>
+							<li>Un accès aux parcelles complexes et des distances temps accentuées par la pente</li>
+							<li>Une structuration sociale particulière qui fait la part belle aux petits exploitants et au système coopératif</li>
 						</ul>
 					</section>
 					<section>
-						<h3>Viticulture départementale</h3>
-						<img src="img/class_viti_dorgogne_2014.png" alt="classification viticole dep dordogne" width="45%"></img>
-						<img src="img/evol_viti_dorgogne.png" alt="évolution des surfaces viticoles" width="45%"></img>
+						<h3>Les problématiques</h3>
+						<p>Explorer les interactions <strong>société &hArr; environnement</strong> pour proposer une lecture et une compréhension renouvellées du fonctionnement de la viticulture de pente</p>
+						<img data-src="./img/banyuls_workers.JPG" alt="travail banyuls mains" height="200">
+						<aside class="notes">
+							<p align="left">3 questionnements :</p>
+							<ol>
+								<li>La place de l’économie et du marché dans les dynamiques territoriales de vignoble-système ?</li>
+								<li>Les interactions sociales et spatiales structurent leur espace ?</li>
+								<li>Comment les acteurs s’approprient les phénomènes formalisés pour penser l’abstraction ?</li>
+							</ol>
+						</aside>
+					</section>
+					<!--Présentation des terrains d'étude-->
+					<!-- <section>
+						<h3>Les terrains d'études</h3>
+						<ul>
+							<li>Les AOC Banyuls - Collioure</li>
+							<li>Le <i>val di Cembra</i></li>
+						</ul>
+						<script src="https://embed.github.com/view/geojson/ElCep/vitiTerroir/vitierroir4geographer/data_geo/points_terrain_these.geojson"></script>
+					</section> -->
+					<section>
+						<h3>Les terrains d'études : localisation</h3>
+						<img width="70%" data-src="./img/localisation_terrains_etudes.png" alt="carte de localisation">
 					</section>
 					<section>
-						<h3>Les AOC Bergerac</h3>
-						<img src="img/AOC_bergerac.jpeg" alt="Les différentes AOC"></img>
-					</section>
-					<section>
-						<h3>Les surfaces viticoles entre 1970 et 2014</h3>
-						<img src="img/gg_evol_viti_aoc.png" alt="surfaces viti de l'AOC entre 1970 et 2014" width="75%"></img>
-					</section>
-					<section>
-						<h3>L'emprise de la vigne en 2014</h3>
-						<img src="img/parcelles_viti_aoc_bergerac_2014.jpeg" alt="surfaces viti en 2014"></img>
+						<h3>Les terrains d'études : description</h3>
+						<img width="1000" data-src="./img/pano-banyuls.jpg" alt="panorama val di Cembra">
+						<p style="text-align:center;">Banyuls-sur-mer</p>
+						<img width="1000" data-src="./img/cembra2-s.jpg" alt="panorama val di Cembra">
+						<p style="text-align:center;">La <i>val di Cembra</i></p>
+						<aside class="notes">
+							<ul>
+								<li>Un vignoble en contexte de pente</li>
+								<li>Quatre communes</li>
+								<li>Viticulture jardinée (Briffaud et Davasse, 2012)</li>
+								<li>Accès au tourisme</li>
+								<li>Une forte présente de la coopération sous toutes ses formes</li>
+							</ul>
+						</aside>
 					</section>
 				</section>
+				<!-- Cadre méthodologique ?-->
 				<section>
+					<section>
+						<h2>Un cadre théorique pour</br>la modélisation</br>et la simulation</h2>
+					</section>
+					<section>
+						<h3>Définition et limites conceptuelles</h3>
+						<!-- <img width="120%" data-src="./img/owl_terroir_territoire.png" alt="Ontologie terroir-terroitoire"> -->
+						<img width="120%" data-src="./img/onto_terroir_territoire_2.png" alt="Ontologie terroir-terroitoire">
+						<p style="text-align:right"><small>Première publication de l'ontologie du terroir : <a href="http://www.projetsdepaysage.fr/fr/du_paysage_au_terroir_viticole_de_forte_pente_a_la_recherche_des_leviers_du_management_territorial">Delay (2013)</a></small></p>
+					</section>
+				<!-- 	<section>
+						<h3>Une approche ...</h3>
+						<p>Les phénomènes à modéliser sont complexe et impliquent des comportement humain &rArr; une dificulté quand l'objectifs est de modéliser et simuler.</p>
+						<p>Nous avons donc opté pour une approche <b>post-normale</b> des sciences (Funtowic et Ravertz 1993)</p></br>
+					</section> -->
+					<section>
+						<h3>Une démarche post-normale ?</h3>
+						<blockquote cite="http://www.amazon.fr/MODELISATION-SIMULATION-DECOSYSTEMES-d%C3%A9terministes-simulations/dp/2225853630">
+							&#171; when uncertainties are either of the epistemological or ethical kind, or when decision stakes reflect conflicting purposes among stakeholders &#187;
+						</blockquote>
+						<p style="text-align:right;">Funtowic et Ravertz 1993 (p. 750)</p>
+						<p>Pour faire face à l’inconnu ou à la complexité liée aux comportements humains, les sciences post-normales l'intègrent et la délimitent en utilisant une communauté de pairs.</p>
+						<img data-src="./img/groupe_laccave.jpg" alt="groupe laccave" width="100%">
+						<small>Séminaire LACCAVE (Banyuls 2013)</small>
+					</section>
+					<section data-background="img/stormtrooper_simu.jpg" data-background-transition="zoom">
+						<h3>Modéliser...</h3>
+						<blockquote>&#171; dépacer l'unicité des lieux et des phénomènes observés &#187;</blockquote>
+						<p style="text-align:right;"> (Pumain, 2003, p.27)</p>
+						<blockquote cite="http://www.amazon.fr/MODELISATION-SIMULATION-DECOSYSTEMES-d%C3%A9terministes-simulations/dp/2225853630">
+							&#171; un modèle est une abstraction qui simplifie le système réel étudié [...] pour se focaliser sur les aspects qui intéressent le modélisateur et qui définissent les problématiques du modèle. &#187;
+						</blockquote>
+						<p style="text-align:right;">Coquillard et Hill (1997, p.7)</p>
+						</br>
+						<small>crédit photo : <a href="https://www.flickr.com/photos/jdhancock/3569262181/in/photostream/">JD Hancock</a> Flick'r</small>
+					</section>
+					<section>
+						<h3>... et simuler</h3>
+							<blockquote cite="http://www.amazon.fr/MODELISATION-SIMULATION-DECOSYSTEMES-d%C3%A9terministes-simulations/dp/2225853630">
+								&#171; La simulation consiste à faire évoluer une abstraction d’un système au cours du temps afin d’aider à comprendre le fonctionnement et le comportement de ce système et à appréhender certaines de ses caractéristiques dynamiques dans l’objectif d’évaluer différentes décisions &#187;
+							</blockquote>
+							<p style="text-align:right;">Coquillard et Hill (1997, p.11)</p>
+							<img src="./img/loading.jpg" width="45%"></br>
+							<small>Crédit photo : <a href="https://www.flickr.com/photos/24738383@N07/2339191577/in/photolist-4yGYag-qa5hsM-4JMH6W-bqip6-fVZT5-4Eccbn-5vPnUa-3MHdHM-gS1Qce-7aN29B-2HN5CU-pdeNLC-6Wh4Vh-bqDMC-4SDCmV-7nYezD-4J4xmN-hMgmp3-3z2T5-6Snbbo-e1pTmz-4JHsft-81zxrq-4P8ytV-6sgyHq-79cV2B-4offpk-8YZgqr-5UPNJu-9dQRes-pAKqp-7SfZNG-7BTHEp-4JMGSE-8s36Dz-5Xh2Lt-6gTcTP-7XkH2s-4Egre1-cA4wsu-feEaR1-brRFKs-7BXs2h-k5DzDD-8JzvRH-aNzGji-4Eccct-4L3Tx7-9dRC7-e3Ju1K">Pablo Barrera</a> on Flick'r</small>
+							<aside class="notes">
+							<p>On peut aussi citer Thom (2009) L'expérimentation par elle-même ne peut guère conduire à des progrès [...]. Elle peut permettre de contrôler que si on à une théorie, donc si l'on dispose d'outils d'exploration. La théorisation [...] est liée à la possibilité de plonger le réel dans un virtuel imaginaire, doté de propriétés génératives[...]"</p>
+						</aside>
+					</section>
+					<section data-background="img/Plaque_assay_macro_l.jpg" data-background-transition="zoom">
+						<h3>Les systèmes multi-agents (SMA)</h3>
+						<blockquote>
+							<p style="text-align:right;">Un agent est une entité physique ou virtuelle</p>
+							<ul>
+								<li>capable d'agir dans un environnement</li>
+								<li>mue par un ensemble de tendances (sous forme d'objectifs)</li>
+								<li>capable de percevoir (de manière limitée) son environnement</li>
+								<li>dont le comportement tend à satisfaire ses objectifs</li>
+							</ul>
+						</blockquote>
+						<p style="text-align:right;">J. Ferber 1995</p>
+						<small>crédit photo : <a href="http://fr.wikipedia.org/wiki/Fichier:Plaque_assay_macro.jpg">Y tambe</a> in wikimedia commons</small>
+					</section>
+					<section>
+						<h3>De l'empirisme dans la modélisation 1/2</h3>
+						<p style="text-align:center;">Les SMA ouvrent la voie pour les SHS aux <em>construits formels</em></p>
+						<blockquote cite="http://jasss.soc.surrey.ac.uk/18/1/18.html">
+							« formal models are essential to science, not because they are more "true" than other kinds of model, but that they facilitate a collective and progressive development of knowledge between researchers »
+						</blockquote>
+						<p style="text-align:right;">Edmonds (<a href="http://jasss.soc.surrey.ac.uk/18/1/18.html">2015</a>, §1.2)</p>
+						<aside class="notes">
+							<ol>
+								<li>La modélisation est souvent perçue comme la force des sciences expérimentales</li>
+								<li><i>Les SMA ouvrent la voie pour les SHS</i>  C'est précisement ce que nous avons essayé de faire, proposer de developper un savoir partagé</li>
+						</aside>
+					</section>
+					<section>
+						<h3>De l'empirisme dans la modélisation 2/2</h3>
+						<img width="450" data-src="img/theory_cassili.png" alt="modélisation selon cassili et al.">
+						<p style="text-align:right;"><small>Tubaro, P. et A. Casilli (<a href="https://hal.archives-ouvertes.fr/hal-00661425">2010</a>).</small></p>
+						<aside class="notes">
+							<p>(A) -> le point de départ du processus de recherche. Une fois les hypothèses de recherche et les premiers résultats empiriques formulés, une théorie peut émerger (B). Un système à base d’agents peut alors être formalisé comme proof of concept, testé et corrigé. Des étapes supplémentaires peuvent êtres ajoutées pour intégrer des validations empiriques des données.</p>
+						</aside>
+					</section>
 					<section>
 						<h2>Méthodologie</h2>
 					</section>
-					<section>
-						<h3>Manipulation du DEM : Pentes et orientations</h3>
-						<img src="img/slope_aoc_bergerac.png" alt="classification des pentes dur l'aoc bergerac" width="45%"></img>
-						<img src="img/aspect_aoc_bergerac.png" alt="classification des orientations AOC" width="45%"></img>
-					</section>
-					<section>
-						<h3>Manipulation du DEM : radiations</h3>
-						<p>A partir des altitudes, de la pente et des orientations on peut calculer la somme radiative sur la période végétative</p>
-						<img src="img/radiation_global.png" alt="classification des pentes dur l'aoc bergerac" width="75%"></img>
-					</section>
-					<section>
-						<h3>Les facteurs abiotiques et le vignoble</h3>
-						<p>Par ANOVA, on teste l'influence des facteurs abiotiques sur les dynamiques diachroniques du vignoble</p>
+					<section data-background="img/environnement.jpg" data-background-transition="zoom">
+						<h3>Caractériser notre pratique</h3>
+						<p>Nous avons construit un écosystème de modèles s'interrogeant et se répondant les uns les autres</p>
+						<p>Pour cela nous avons recueuilli plusieurs types d'informations:</p>
 						<ul>
-							<li>Pas de corrélation avec les radiations ni avec les expositions</li>
-							<li>Une corrélation assez bonne sur les valeurs de pente et d'altitude</li>
+							<li>des données d'observations</li>
+							<li>des relevés bio-physiques (température, acidité, comptage)</li>
+							<li>des narrations (entretiens)</li>
+							<li>...</li>
 						</ul>
-						<img src="img/gg_density_slope.png" alt="densité alti" width="45%"></img>
-						<img src="img/gg_density_alti.png" alt="densité alti" width="45%"></img>
+						</br>
+						<small>crédit photo : <a href="https://www.flickr.com/photos/infomatique/5846162059/in/photolist-7PMDsP-o3QCYs-78e9pa-8zNey2-qV6z8P-4Ve9EZ-9UB7iz-z9Crc-77Yhc3-7WkVn6-8vwL63-8vt5fr-8vys7q-8vujZV-8vtC48-63pkYL-8igqTe-58xyqd-r9ysjS-6rgE2K-ePJ3xs-8yq6p3-z9Crn-8m44Pn-8h1w19-2UinmB-bqgt9z-64MHqN-dsUhUG-93qjxV-4Vt4bE-a5sj6k-rPnf5X-7hjCzB-6oWub4-8468qj-dhAHji-cgXRCQ-4VinGo-aM8zWp-7YKwbh-67dsCM-9KdDi3-7JYnMT-ajpkHp-6YX2WC-85SagC-672gyu-8vuq6B-nDBFGC">William Murphy
+</a>on Flick'r</small>
 					</section>
 					<section>
-						<h3>L'abandon : une dynamique spatiale ?</h3>
-						<img src="img/heatmap_2000_2014.png" alt="abandon annuel" width="45%"></img>
+						<h3>Situer les modèles et leurs objectifs</h3>
+						<p>Nous présentons six modèles</p>
+						<img width="450" data-src="img/positionnement_modeles.png" alt="Positionnement des modèles d'après Banos et Sanders. 2013">
+						<p style="text-align:right;"><small>d'après la grille de lecture proposée par Banos et Sanders (2013)</small></p>
+						<aside class="notes">
+							<p>Evoquer les 6 modèles</p>
+							<ul>
+								<li>Dion Still Alive</li>
+								<li>VIcTOr</li>
+								<li>LAME</li>
+								<li>CiVIsMe</li>
+								<li>acidityGIS</li>
+								<li>CeLL</li>
+							</ul>
+						</aside>
 					</section>
 					<section>
-						<h3>Ville et vignoble : une concurrence ? </h3>
-						<img src="img/vignobleVSurabnisation.jpeg" alt="abandon annuel"></img>
+						<h3>Une construction itérative et partagée</h3>
+						<small>
+							<table>
+								<tr>
+									<th>Modèles</th>
+									<th>Echelles</th>
+									<th>Acteurs</th>
+								</tr>
+								<tr>
+									<td>Dion Still Alive & VIcTOr</td>
+									<td>Petite échelle</td>
+									<td>Chercheurs ou institutions nationales</td>
+								</tr>
+								<tr>
+									<td>LAME & CiVIsMe</td>
+									<td>Meso-échelle</td>
+									<td>Institutions régionales/nationales</td>
+								</tr>
+								<tr>
+									<td>acidityGIS & CeLL</td>
+									<td>Grande échelle</td>
+									<td>Acteurs locaux</td>
+								</tr>
+							</table>
+						</small>
+						<p>Ces modèles nous permettent d'obtenir des résultats à différentes échelles et pour différents usages</p>
+					</section>
+					<section>
+						<h3>Construction</h3>
+						<p>La modélisation multi-agents permet une très grande flexibilitée de programmation. Elle est particulièrement adaptée pour l'étude des systèmes complexes.</p>
+						<p>Or, les processus sociaux sont par nature complexes.</p>
+						<blockquote cite="Herbert Simon">
+							«Social sicences are, in fact, the "hard" science»
+						</blockquote>
+						<p style="text-align:right;">Herbert Simon (économiste) </p>
+						<blockquote cite="spiderman">
+							«With great power comes great responsibility»
+						</blockquote>
+						<p style="text-align:right;"><a href="http://en.wikipedia.org/wiki/Uncle_Ben">Benjamin "Ben" Parker</a> (1962)</p>
+					</section>
+					<section>
+						<h3>Vous avez dit validation ?</h3>
+						<p>La validation de systèmes complexes et <i>a fortiori</i> sociaux est compliquée. Pour surmonter cette difficulté : </p>
+						<ul>
+						  <li><strong>réplicabilité</strong> : une description ODD (Overview Desing and Details) (Grimm <i>et al.</i>, 2006)</li>
+						  <li>une analyse de <strong>sensiblité</strong></li>
+						  <li>une construction, une co-construction ou une <strong>validation</strong> par les acteurs au même titre que par les données</li>
+						</ul>
+					</section>
+				</section>
+				<!-- Méthodo et Résultats-->
+				<section>
+					<section>
+						<h2>Résultats de modélisations</h2>
+						<h3>Les exemples de <em>Dion still alive</em>, CiVIsMe et CeLL</h3>
+					</section>
+					<section>
+						<h3>Préambule à <em>Dion still alive</em></h3>
+						<p>Un travail initié en réponse à un article de A. Banos, D. Moreno, C. Pivano et P. Taillandier sur <a href="http://cybergeo.revues.org/24877">cybergeo</a> proposant de revisiter
+					les travaux classiques des théories géographiques</p>
+					  	<p align="left">les propositions :</p>
+						  <ul>
+						    <li>si les fondateurs de nos vignobles avaient été aussi dociles qu'on le dit aux suggestions de la nature, ils se fussent bien garder d'aventurer leurs plantations hors de la région méditerranéenne […](p429)</li>
+						    <li>avant les chemins de fer, les plus belles possibilités de débit, celles qu'assuraient les grands marchés de l'Europe septentrionale, où le vin se vendait au plus haut prix, 
+						  étaient limitées aux abords des ports maritimes, des rivières navigables et de quelques grandes routes de terre, aptes aux charriots lourds (p419)</li>
+						    <li>...</li>
+						  </ul>
+					</section>
+					<section>
+						<h2>Comment formaliser la qualité ?</h2>
+						<video preload="auto" controls="controls" src="video/isotrope.webm"></video>
+					</section>
+					<section data-background="img/grape.JPG" data-background-transition="slide">
+						<blockquote cite="http://www.persee.fr/web/revues/home/prescript/article/geo_0003-4010_1952_num_61_328_13718">
+						&ldquo; Là où faute de communications suffisantes, s'évanouissait l'espoir d'une vente lucrative sur les marchés lointains, disparaissait 
+						aussi l'émulation qui incitait les viticulteurs à relever la qualité de leurs produits&rdquo;.
+					    </blockquote>
+					    <p align="right">R. Dion p419</p></br>
+					    <small>crédit photo : Etienne DELAY</small>
+					</section>
+					<section>
+						<h2>Un monde homogène </br> n'existe pas !</h2>
+						<video preload="auto" controls="controls" src="video/anisotrope.webm"></video>
+					</section>
+				  	<section data-background="img/cep.JPG" data-background-transition="slide">
+						<blockquote cite="http://www.persee.fr/web/revues/home/prescript/article/geo_0003-4010_1952_num_61_328_13718">
+						&ldquo; &Agrave; la même époque [parlant de 1597], et sous un climat sensiblement plus chaud que celui d'Orléans, restaient inemployées, sur les versants des vallées de la Champagne berrichonne, 
+						de grandes étendues de sol calcaire, pierreux et sec, où la vigne eût donné sans grande difficulté de forts bons produits &rdquo;
+					    </blockquote>
+					    <p align="right">R. Dion p419</p></br>
+					    <small>crédit photo : Etienne DELAY</small>
+				  	</section>
+					<section>
+						<h3>Préambule à CiVIsMe</h3>
+						<p style="text-align:center;">Modèle à meso-échelle qui s'intéresse au système coopératif sur les deux territoires</p>
+						<img data-src="./img/banyuls_1.JPG" alt="Banyuls plage et vigne" height="500" style="float: left;">
+						<img data-src="./img/Cembra_1.JPG" alt="Cembra vigne et montagne" height="500" style="float: right;">
+					</section>
+					<section>
+						<h3>CiVIsMe</h3>
+						<video preload="auto" controls="controls" src="video/CiVIsMe.webm" height="500"></video>
+						<aside class="notes">
+							<p>Ce modèle prend en compte la pente et l'accès, mais n'a pas trouvé son public</p>
+							<p>Construit entre la France et L'italie, présenté aux viticulteurs, aux coopératives locales, et en France à la CCVF</p>
+							<ul>
+								<li>La place de la distance et de la pente</li>
+								<li>Géographie physique et géographie sociale &rArr; structure spatiale?</li>
+								<li>La place de la coopérative dans la structuration spatiale du territoire</li>
+								<li>... explorations des variabilitées territoriales (Trentino VS Pyrénées-Orientales)</li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<h3>Préambule a CeLL</h3>
+						<p>Modèle à échelle fine qui s'intéresse aux dynamiques de population de <i>L. botrana</i> et aux stratégies collectives de lutte.</p>
+						<img data-src="./img/eudemis-adulte.png" alt="L.botrana" style="float: left;">
+						<img data-src="./img/lobesia_map.png" alt="map ilot" width="255" style="float: center;">
+						<img data-src="./img/lobesia_tr.JPG" alt="Cembra vigne et montagne" width="255" style="float: right;">
+					</section>
+					<section>
+						<h3>CeLL</h3>
+						<video preload="auto" controls="controls" src="video/lobesia.webm"  width="90%"></video>
+						<aside class="notes">
+							<p>Construit entre recherche, développement et applications, présenté aux viticultures de Banyuls</p>
+							<p>Un modèle beaucoup plus complexe à mon sens que CiVIsMe, mais beaucoup plus facile à percevoir pour les viti</p>
+							<ul>
+								<li>Identifier les variables nécessaire au passage d'un modèles population à un modèle à base d'agents</li>
+							    <li>Explorer et optimiser les méthodes de luttes</li>
+							    <li>Comprendre les implications d'un passager clandestin</li>
+							</ul>
+						</aside>
 					</section>
 				</section>
 				<section>
 					<section>
-						<h2>Discussion</h2>
+						<h2>Comment passer des modèles au "vignoble système"</h2>
+						<h3>La prospective !</h3>
 					</section>
 					<section>
-						<h3>Premières interprétations</h3>
-						<small>
-						<table>
-							<tr>
-								<th>Facteurs</th>
-								<th>Constat</th>
-								<th>Poids du facteur</th>
-							</tr>
-							<tr>
-								<td>Relief/pentes</td>
-								<td>Vignes installées en grande majorité sur de faibles pentes</td>
-								<td>Moyen</td>
-							</tr>
-							<tr>
-								<td>Nature du sol</td>
-								<td>Vignes installées principalement sur des sols pauvres au 19e siècle mais et sans logique apparente en 2014</td>
-								<td>Faible</td>
-							</tr>
-							<tr>
-								<td>Démographie</td>
-								<td>2 phases de forte corrélation entre la vigne et la population +19e -20e</td>
-								<td>Trad = Fort</br> actu = Faible</td>
-							</tr>
-							<tr>
-								<td>Urbanisation</td>
-								<td>La décroissance du vignoble se fait parallèlement à un fort accroissement du bâti. Compétition urbain/viticole?</td>
-								<td>Faible</td>
-							</tr>
-							<tr>
-								<td>Labélisation</td>
-								<td>La seule labellisation n’a pas réussi à changer la tendance de décroissance</td>
-								<td>Faible</td>
-							</tr>
-						</table>
-						</small>
+						<h3>Prospective et simulations co-construites</h3>
+							<img data-src="./img/etapes_syspathmm.png" alt="schema SYSPATHMM", width="65%">
+							<p style="text-align:right"><small>D'après Sebillotte et Sebillotte (2002), adaption à la prospective par co-construction (Delay, 2015)</small></p>
 					</section>
 					<section>
-						<h3>Les prolongements</h3>
-						<p>Nous sommes maintenant à la recherche d'autres données pour améliorer notre vison des dynamiques spatiales</p>
-						<ul>
-							<li>Géologie/pédologie</li>
-							<li>Prix du litre de vin par AOC et par an</li>
-							<li>Prix du foncier</li>
-							<li>Prix du bâti</li>
-						</ul>
+						<h3>La methode MICMAC appliquer au "vignoble système" de forte pente </h3>
+						<img data-src="./img/igraph_variables_structurelle.png" alt="graph matrice", width="60%">
+						<p>Permet d'isoler les variables <em>autonmoe</em>, <em>dépendantes</em>,<em>motrice</em> et <em>relai</em>.</p>
+						<aside class="notes">
+							<p>definition</p>
+							<ul>
+								<li>Variables autonomes : elles constituent des tendances lourdes ou peu connectées au système. Ce sont des variables sur lesquelles il sera difficile d’influer.</li>
+								<li>Variables dépendantes : ce sont des variables qui peuvent évoluer sous la pression d’autres interactions</li>
+								<li>Variables relais : elles sont à la fois motrices et dépendantes et doivent être traitées avec beaucoup d’attention. En effet, si elles permettent de véritablement peser sur
+le système elles sont également largement influencées par d’autres variables</li>
+								<li>Variables motrices : elles sont assez peu dépendantes d’autres variables. Représentent un investissement de long terme.</li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<h3>Prospective et simulations co-construites <small>2/2</small></h3>
+							<img data-src="./img/tableau_acteurs.JPG" alt="tableau des acteurs" width="30%" style="float: right;">
+							<table width="60%">
+							  	<td>
+									<ul>
+										<li>identification des variables qui influencent la viticulture de pentes a partir des modèles</li>
+										<li>validation du système par les acteurs</li>
+										<li>évaluation matricielle</li>
+										<li>création de scenarii prospectifs</li>
+									</ul>
+								</td>
+							</table>
+					</section>
+					<section>
+						<h3>Comparaisons des visions fragmenter et continue</h3>
+						<img data-src="./img/gg_plant_de_motricite_mvt.png" alt="plan dependance" width="850%">
+					</section>
+					<section>
+						<h3>Et tout ça pour quoi ?</h3>
+						<p>Pour proposer des <em>scenarii</em></p>
 					</section>
 				</section>
-<!--DIAPO DE FIN-->
+				<!--Conclusion-->
+				<section>
+					<section>
+						<h2>Conclusion</h2>
+					</section>
+					<section data-background="./img/valAosta.JPG" data-background-transition="zoom">
+						<h3>Les grandes lignes</h3>
+						<ul>
+							<li>Viticulture de fortes pentes</li>
+							<ul>
+								<li>L'espace viticole est une construction sociale</li>
+								<li>L'hétérogénéité spatiale &#8594; possibilités d'adaptations locales</li>
+								<li>Des espaces ambigüs : entre <strong>forte</strong> visibilité et <strong>faible</strong> rentabilité</li>
+							</ul>
+							<li>Démarche de modélisation</li>
+							<ul>
+								<li>Résultats = résultats de modélisation <strong>+</strong> processus de modélisation</li>
+							    <li>Difficile construction de modèles à la fois généraux et descriptifs</li>
+							    <li>La prospective dans la démarche de simulation pour préparer l'esprit à voir l'information</li>
+							</ul>
+						</ul>
+						<aside class="notes">
+							<p>Pour les modèles</p>
+							<ul>
+								<li>Le marché en tant que grand architecte supra-territorial</li>
+								<li>La société comme recours au possibilisme</li>
+								<li>Les échelle fines, les individus et la spatialité</li>
+							</ul>
+							<p>Dans la démarche prospective</p>
+							<ul>
+								<li>La co-construction une possibilité pour aider à identifier les contours des contraintes</li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<h3>Des limites ?</h3>
+						<ul>
+						    <li>Types d'acteurs VS types d'échelles</li>
+						    <li>Modéliser pour comprendre VS modéliser pour prédire</li>
+						    <li>Le couplage de modèles et les comportements d'agents</li>
+						</ul>
+						<img data-src="./img/positionnement_modeles_echelles.png" alt="le fer a cheval" width="40%">
+					</section>
+					<section data-background="./img/caffe.jpg" data-background-transition="zoom">
+						<h3>Et demain, enfin aujourd'hui ?</h3>
+						<p>Ce travail se prolonge : </p>
+						<ul>
+						  <li>Au travers de vitiTerroir</li>
+						  <li>L'axe <i>Ricerca sulla viticoltura di montagna</i> de la <i>fondazione E. MACH</i></li>
+						  <li>Du programme LACCAVE (<i>Long term impacts and Adaptation to Climate ChAnge in Viticulture and Enology</i>)</li>
+						  <li>Projet de programme coopération viticole internationnal</li>
+						  <li>Proramme COMMONS, sur la gestion collective de la ressource naturelle</li>
+						  <li>...</li>
+						</ul>
+						</br>
+						<small>Crédit photo : <a href="https://www.flickr.com/photos/anieto2k/5346367901/in/photolist-99rwUV-d1vaJj-7zwYUP-6gWMuq-dEMfqD-61YtB3-nh3dHY-5s6J6x-9qivQ4-pwahe9-aofVPx-6vEZXJ-rpAYS9-9vvtrq-95eLkc-6FakAV-qqxoKg-nTWrNc-dnc5ij-dNRrQq-7snvT8-r2vBMN-bHnX44-9VUTRg-jtKpT-t4cZx-nrSFAn-cAq2hu-afWnEK-bjiF2M-2ukyWb-9LYYg1-eddhHY-4wgMET-93ycXv-9r6an6-qvf2Dj-diHJ33-92GE1F-5VKqR3-9zBqsW-oQfk4u-7LKQvz-7LPMnL-7LKQtR-mfXDy7-cZJS8E-7snvQP-ciruhj-9pAz85">Andrés Nieto Porras</a> on Flick'r</small>
+					</section>
+				</section>
+				<!--Remerciement-->
 				<section data-background="img/fin.jpg" data-background-transition="slide">
-					<h2>Merci de votre </br> Attention</h2>
+					<h3>Merci de votre attention</h3>
 					<img src="img/github.png" alt="logo gitHub" width="13.9%"></img>
 					<img src="img/QR_code_contact.png" alt="contactez moi!" width="20%"></img></br>
-					<p>Retrouvez cette présentation sur GitHub : </br><a href="https://github.com/ElCep/vitiTerroir">http://unil.im/uJPV2</a></p>
-					<p>Et toutes les informations sur <a href="http://vititerroi.hypotheses.org/">vititerroi.hypotheses.org</a></p>
-					<small>réalisée avec <a href="https://github.com/hakimel/reveal.js">reveal.js</a></small></br>
-					<small>crédit photo : <a href="http://www.flickr.com/photos/misnyot/6357634305/sizes/m/in/photostream/">Thomas Misnyovszki</a> on Flick'r</small>
+					<p style="text-align:center;">Vous pouvez retrouver le manuscrit de thèse et l'ensemble des modèles sur GitHub : </br><a href="https://github.com/ElCep/these_ed">http://unil.im/Ku9xI</a></p>
+					<small>Présentation réalisée avec <a href="https://github.com/hakimel/reveal.js">reveal.js</a></small></br></br>
+					<small>Crédit photo : <a href="http://www.flickr.com/photos/misnyot/6357634305/sizes/m/in/photostream/">Thomas Misnyovszki </a> on Flick'r</small>
+				</section>
+				<section data-background="img/hausman_dys.JPG" data-background-transition="slide">
+				
 				</section>
 			</div>
 
